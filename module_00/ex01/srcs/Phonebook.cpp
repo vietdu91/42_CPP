@@ -6,7 +6,7 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 15:00:40 by emtran            #+#    #+#             */
-/*   Updated: 2022/06/06 18:57:36 by emtran           ###   ########.fr       */
+/*   Updated: 2022/06/09 14:41:56 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ Phonebook::~Phonebook(void) {
 
 void 	Phonebook::get_line_of_wrong_index(std::string& input) {
 
-	std::cout << "\033[5;32mBad index ⛔ Booooooooouuuh ! Please enter an index: \e[0m";
+	std::cout << "\033[5;34mBad index ⛔ Booooooooouuuh ! Please enter an index: \e[0m";
 	this->get_index(input);
 }
 

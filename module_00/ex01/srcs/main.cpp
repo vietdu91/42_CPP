@@ -6,7 +6,7 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 15:02:30 by emtran            #+#    #+#             */
-/*   Updated: 2022/06/06 18:48:20 by emtran           ###   ########.fr       */
+/*   Updated: 2022/06/09 14:42:09 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ void get_line_of_index(std::string& input) {
 		exit(-1);
 	}
 	else if (input.empty() || is_only_spaces(input)) {
-		std::cout << "\033[5;32mEmpty line 🤷 Please enter an index: \e[0m";
+		std::cout << "\033[5;34mEmpty line 🤷 Please enter an index: \e[0m";
 		get_line_of_index(input);
 	}
 }
