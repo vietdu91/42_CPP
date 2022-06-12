@@ -6,7 +6,7 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 15:02:30 by emtran            #+#    #+#             */
-/*   Updated: 2022/06/09 14:42:09 by emtran           ###   ########.fr       */
+/*   Updated: 2022/06/10 16:35:23 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,8 +69,6 @@ int	main(int argc, char **argv) {
 
 	(void) argc;
 	(void) argv;
-/*	std::cout << "*---------------------------*" << std::endl;
-	FAIRE LE PROMPT D'AFFICHAGE ICI */
 	i = 0;
 	while (1)
 	{

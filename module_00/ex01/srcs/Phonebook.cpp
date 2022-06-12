@@ -6,7 +6,7 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 15:00:40 by emtran            #+#    #+#             */
-/*   Updated: 2022/06/09 14:41:56 by emtran           ###   ########.fr       */
+/*   Updated: 2022/06/10 16:36:37 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ void	Phonebook::display_one_contact(int i) {
 void	Phonebook::display_contacts(void) {
 
 	int	i = 0;
-	std::cout << "     ________________________________ " << std::endl;
+	std::cout << "     ================================ " << std::endl;
 	std::cout << "    |    😃    |    😋    |    😁    |" << std::endl;
 	std::cout << "    |FIRST_NAME| LAST_NAME| NICKNAME | " << std::endl;
 	std::cout << " ___|__________|__________|__________| " << std::endl;
@@ -73,5 +73,5 @@ void	Phonebook::display_contacts(void) {
 		this->_contact[i].display_identity_for_search();
 		i++;
 	}
-	std::cout << std::endl << std::endl;
+	std::cout << " ===================================== " << std::endl << std::endl;
 }

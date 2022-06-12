@@ -1,5 +1,5 @@
 	# Library Name #
-NAME		=	megaphone
+NAME		=	violence
 
 	# Compilator #
 ifeq ($(shell uname -s),Darwin)
@@ -9,9 +9,14 @@ else
 endif
 
 	# Variables #
-SRCS		=		megaphone.cpp
+SRCS		=		HumanA.cpp \
+					HumanB.cpp \
+					main.cpp \
+					Weapon.cpp
 
-#INCLUDES	=
+INCLUDES	=		includes/HumanA.hpp \
+					includes/HumanB.hpp \
+					includes/Weapon.hpp
 
 	# Colors Foreground #
 DEFAULT		=	\033[0;39m
@@ -73,22 +78,10 @@ $(NAME):	${OBJS} ${INCLUDES}
 			${COMPILER} ${FLAGS} -I includes ${OBJS} -o $(NAME)
 			@printf "\n$(GREEN)████████████████  ✨ ✨ ✨  C'EST MERVEILLEUSEMENT BIEN COMPILE  ✨ ✨ ✨  ████████████████$(RESET)"
 			@printf	"\n\n\n"
-			@printf "		                                    $(ROSE)    $(RESET)              \n"
-			@printf "		                                $(ROSE)        $(RESET)        $(GRIS)  $(RESET)  \n"
-			@printf "		                            $(ROSE)        $(RESET)$(JAUNE)  $(RESET)$(ROSE)  $(RESET)      $(GRIS)  $(RESET)    \n"
-			@printf "		                        $(ROSE)            $(RESET)$(JAUNE)  $(RESET)$(ROSE)  $(RESET)    $(GRIS)  $(RESET)    \n"
-			@printf "		        $(ROSE)        $(RESET)$(ROUGE)  $(RESET)$(ROSE)    $(RESET)$(ROUGE)  $(RESET)$(ROSE)                $(RESET)\n"
-			@printf "		    $(ROSE)      $(RESET)$(JAUNE)      $(RESET)$(ROUGE)  $(RESET)$(JAUNE)  $(RESET)$(ROSE)  $(RESET)$(ROUGE)  $(RESET)$(ROSE)                $(RESET)\n"
-			@printf "		    $(ROSE)            $(RESET)$(ROUGE)  $(RESET)$(ROSE)    $(RESET)$(ROUGE)  $(RESET)$(ROSE)                $(RESET)      $(GRIS)      $(RESET)\n"
-			@printf "		    $(ROSE)            $(RESET)$(ROUGE)  $(RESET)$(ROSE)    $(RESET)$(ROUGE)  $(RESET)$(ROSE)                $(RESET)\n"
-			@printf "		    $(ROUGE)                                    $(RESET)\n"
-			@printf "		      $(ROUGE)                                  $(RESET)\n"
-			@printf "		            $(ROUGE)    $(RESET)        $(ROUGE)                $(RESET)    $(GRIS)  $(RESET)    \n"
-			@printf "		            $(ROUGE)    $(RESET)            $(ROUGE)            $(RESET)      $(GRIS)  $(RESET)  \n"
-			@printf "		            $(ROUGE)    $(RESET)                $(ROUGE)        $(RESET)        $(GRIS)  $(RESET)\n"
-			@printf "		            $(ROUGE)    $(RESET)                    $(ROUGE)    $(RESET)\n"
+
+
 			@printf "\n\n$(SKY)████████████████  😊 😊 😊  PENSEE DU JOUR POUR TE FAIRE SOURIRE  😊 😊 😊  ████████████████$(RESET)"
-			@printf "\n\n$(BLUE_B)Il faut que la voix des hommes sans voix empêchent les puissants de dormir 📣\n\n$(RESET)"
+			@printf "\n\n$(BLUE_B)Aux armes, citoyens ! Formez vos bataillons ! Marchons, marchons ! Qu'un sang impur... Abreuve nos sillons ! 🩸\n\n$(RESET)"
 			@printf "$(YELLOW)============$(RESET)"
 			@printf "\e[38;5;227m============$(RESET)"
 			@printf "\e[38;5;228m============$(RESET)"
@@ -135,5 +128,3 @@ re:			fclean all
 			@printf "\e[38;5;231m============\n$(RESET)"
 
 .PHONY:	all clean fclean re
-
-
