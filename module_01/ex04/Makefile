@@ -1,5 +1,5 @@
 	# Library Name #
-NAME		=	violence
+NAME		=	loser
 
 	# Compilator #
 ifeq ($(shell uname -s),Darwin)
@@ -9,14 +9,9 @@ else
 endif
 
 	# Variables #
-SRCS		=		HumanA.cpp \
-					HumanB.cpp \
-					main.cpp \
-					Weapon.cpp
+SRCS		=		main.cpp
 
-INCLUDES	=		includes/HumanA.hpp \
-					includes/HumanB.hpp \
-					includes/Weapon.hpp
+# INCLUDES	=
 
 	# Colors Foreground #
 DEFAULT		=	\033[0;39m
@@ -78,20 +73,7 @@ $(NAME):	${OBJS} ${INCLUDES}
 			${COMPILER} ${FLAGS} -I includes ${OBJS} -o $(NAME)
 			@printf "\n$(GREEN)████████████████  ✨ ✨ ✨  C'EST MERVEILLEUSEMENT BIEN COMPILE  ✨ ✨ ✨  ████████████████$(RESET)"
 			@printf	"\n\n\n"
-			@printf "            $(NOIR)                    $(RESET)    $(NOIR)                $(RESET)            \n"
-			@printf "            $(NOIR)                    $(RESET)    $(NOIR)                $(RESET)            \n"
-			@printf "        $(NOIR)    $(RESET)$(ROUGE)    $(RESET)$(NOIR)    $(RESET)$(ROUGE)        $(RESET)$(NOIR)        $(RESET)$(ROUGE)                $(RESET)$(NOIR)    $(RESET)        \n"
-			@printf "        $(NOIR)    $(RESET)$(ROUGE)    $(RESET)$(NOIR)    $(RESET)$(ROUGE)        $(RESET)$(NOIR)        $(RESET)$(ROUGE)                $(RESET)$(NOIR)    $(RESET)        \n"
-			@printf "    $(NOIR)    $(RESET)$(ROUGE)        $(RESET)$(NOIR)    $(RESET)$(ROUGE)    $(RESET)$(BLANC)    $(RESET)$(NOIR)        $(RESET)$(BLANC)    $(RESET)$(NOIR)    $(RESET)$(ROUGE)            $(RESET)$(NOIR)    $(RESET)    \n"
-			@printf "    $(NOIR)    $(RESET)$(ROUGE)        $(RESET)$(NOIR)    $(RESET)$(ROUGE)    $(RESET)$(BLANC)    $(RESET)$(NOIR)        $(RESET)$(BLANC)    $(RESET)$(NOIR)    $(RESET)$(ROUGE)            $(RESET)$(NOIR)    $(RESET)    \n"
-			@printf "$(NOIR)    $(RESET)$(ROUGE)        $(RESET)$(BLANC)    $(RESET)$(NOIR)        $(RESET)$(BLANC)    $(RESET)$(NOIR)                $(RESET)$(BLANC)    $(RESET)$(NOIR)    $(RESET)$(ROUGE)        $(RESET)$(NOIR)    $(RESET)\n"
-			@printf "$(NOIR)    $(RESET)$(ROUGE)        $(RESET)$(BLANC)    $(RESET)$(NOIR)        $(RESET)$(BLANC)    $(RESET)$(NOIR)                $(RESET)$(BLANC)    $(RESET)$(NOIR)    $(RESET)$(ROUGE)        $(RESET)$(NOIR)    $(RESET)\n"
-			@printf "$(NOIR)    $(RESET)$(ROUGE)    $(RESET)$(NOIR)    $(RESET)$(BLANC)        $(RESET)$(ROUGE)        $(RESET)$(NOIR)        $(RESET)$(ROUGE)    $(RESET)$(NOIR)    $(RESET)$(ROUGE)    $(RESET)$(NOIR)        $(RESET)$(ROUGE)    $(RESET)$(NOIR)    $(RESET)\n"
-			@printf "$(NOIR)    $(RESET)$(ROUGE)    $(RESET)$(NOIR)    $(RESET)$(BLANC)        $(RESET)$(ROUGE)        $(RESET)$(NOIR)        $(RESET)$(ROUGE)    $(RESET)$(NOIR)    $(RESET)$(ROUGE)    $(RESET)$(NOIR)        $(RESET)$(ROUGE)    $(RESET)$(NOIR)    $(RESET)\n"
-			@printf "$(NOIR)            $(RESET)$(ROUGE)    $(RESET)$(NOIR)                    $(RESET)$(BLANC)        $(RESET)$(ROUGE)    $(RESET)$(NOIR)    $(RESET)$(ROUGE)        $(RESET)$(NOIR)    $(RESET)\n"
-			@printf "$(NOIR)            $(RESET)$(ROUGE)    $(RESET)$(NOIR)                    $(RESET)$(BLANC)        $(RESET)$(ROUGE)    $(RESET)$(NOIR)    $(RESET)$(ROUGE)        $(RESET)$(NOIR)    $(RESET)\n"
-			@printf "$(NOIR)    $(RESET)$(ROUGE)            $(RESET)$(NOIR)    $(RESET)$(BLANC)        $(RESET)$(NOIR)            $(RESET)$(BLANC)    $(RESET)$(NOIR)        $(RESET)$(ROUGE)        $(RESET)$(NOIR)    $(RESET)\n"
-			@printf "$(NOIR)    $(RESET)$(ROUGE)            $(RESET)$(NOIR)    $(RESET)$(BLANC)        $(RESET)$(NOIR)            $(RESET)$(BLANC)    $(RESET)$(NOIR)        $(RESET)$(ROUGE)        $(RESET)$(NOIR)    $(RESET)\n"
+
 
 			@printf "\n\n$(SKY)████████████████  😊 😊 😊  PENSEE DU JOUR POUR TE FAIRE SOURIRE  😊 😊 😊  ████████████████$(RESET)"
 			@printf "\n\n$(BLUE_B)Aux armes, citoyens ! Formez vos bataillons ! Marchons, marchons ! Qu'un sang impur... Abreuve nos sillons ! 🩸\n\n$(RESET)"
