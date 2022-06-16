@@ -36,6 +36,10 @@ Voici quelques liens de documentation qui pourraient vous accompagner tout au lo
 
 * https://www.geeksforgeeks.org/new-and-delete-operators-in-cpp-for-dynamic-memory/
 
+## Pointeurs & References
+
+* https://cdiese.fr/cpp-pointer-reference/
+
 ## Switch / Case / Default
 
 * https://fr.acervolima.com/instruction-switch-en-c-c/
