@@ -92,7 +92,7 @@ $(NAME):	${OBJS} ${INCLUDES}
 			@printf "		                                              $(NOIR)  $(RESET)$(BLANC)    $(RESET)$(NOIR)  $(RESET)\n"
 			@printf "		                                                $(NOIR)    $(RESET)\n"
 			@printf "\n\n$(SKY)████████████████  😊 😊 😊  PENSEE DU JOUR POUR TE FAIRE SOURIRE  😊 😊 😊  ████████████████$(RESET)"
-			@printf "\n\n$(BLUE_B)Aux armes, citoyens ! Formez vos bataillons ! Marchons, marchons ! Qu'un sang impur... Abreuve nos sillons ! 🩸\n\n$(RESET)"
+			@printf "\n\n$(BLUE_B)I'm not sure how healthy bacon is in general, but I know it's incredibly delicious! 🥓\n\n$(RESET)"
 			@printf "$(YELLOW)============$(RESET)"
 			@printf "\e[38;5;227m============$(RESET)"
 			@printf "\e[38;5;228m============$(RESET)"
