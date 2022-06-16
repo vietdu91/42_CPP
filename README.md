@@ -27,7 +27,7 @@ Voici quelques liens de documentation qui pourraient vous accompagner tout au lo
 ## Classes
 
 * https://www.geeksforgeeks.org/c-classes-and-objects/
-* 
+
 # 🧠   MODULE 01 - Allocation de memoire, pointeurs vers membres, references, switch
 
 ![Screenshot](module_01_img.png)
@@ -36,3 +36,6 @@ Voici quelques liens de documentation qui pourraient vous accompagner tout au lo
 
 * https://www.geeksforgeeks.org/new-and-delete-operators-in-cpp-for-dynamic-memory/
 
+## Switch / Case / Default
+
+* https://fr.acervolima.com/instruction-switch-en-c-c/
