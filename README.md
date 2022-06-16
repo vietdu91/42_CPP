@@ -20,7 +20,14 @@ Voici quelques liens de documentation qui pourraient vous accompagner tout au lo
 
 ![Screenshot](module_000_img.png)
 
+## Namescapes
 
+* http://sdz.tdct.org/sdz/les-espaces-de-noms-namespace.html
+
+## Classes
+
+* https://www.geeksforgeeks.org/c-classes-and-objects/
+* 
 # 🧠   MODULE 01 - Allocation de memoire, pointeurs vers membres, references, switch
 
 ![Screenshot](module_01_img.png)
