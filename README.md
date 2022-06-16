@@ -18,6 +18,7 @@ Voici quelques liens de documentation qui pourraient vous accompagner tout au lo
 * Pas de norme sur les modules ! Mais il est recommandable tout de meme de bien coder efficacement et clairement. Les conseils de l'ANSSI (Agence Nationale de la Securite des Systemes d'Information, ce n'est pas rien) 🚨 vous y aident : https://www.ssi.gouv.fr/uploads/2020/05/anssi-guide-regles_de_programmation_pour_le_developpement_securise_de_logiciels_en_langage_c.pdf 
 # 🧑‍🏫   MODULE 00 - Namescapes, classes, fonctions membres, stdio, streams, listes d'initialisation, static, const, et autres bases
 
+![Screenshot](module_00_img.png)
 
 # 🧠   MODULE 01 - Allocation de memoire, pointeurs vers membres, references, switch
 
