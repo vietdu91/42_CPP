@@ -22,6 +22,8 @@ Voici quelques liens de documentation qui pourraient vous accompagner tout au lo
 
 # 🧠   MODULE 01 - Allocation de memoire, pointeurs vers membres, references, switch
 
+![Screenshot](module_01_img.png)
+
 ## New And Delete
 
 * https://www.geeksforgeeks.org/new-and-delete-operators-in-cpp-for-dynamic-memory/
