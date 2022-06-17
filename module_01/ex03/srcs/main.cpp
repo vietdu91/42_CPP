@@ -6,7 +6,7 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/12 15:05:17 by emtran            #+#    #+#             */
-/*   Updated: 2022/06/12 16:08:11 by emtran           ###   ########.fr       */
+/*   Updated: 2022/06/16 17:56:25 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 int main() {
 	{
 		std::cout << std::endl << "\033[1;31m==========        BOB        ==========\e[0m" << std::endl << std::endl;
-		Weapon club = Weapon("crude spiked club");
+		Weapon club = Weapon(NULL);
 
 		HumanA bob("Bob", club);
 		bob.attack();
