@@ -28,6 +28,10 @@ Voici quelques liens de documentation qui pourraient vous accompagner tout au lo
 
 * https://www.geeksforgeeks.org/c-classes-and-objects/
 
+## Const
+
+* Pourquoi utiliser _const_ ? : https://www.cprogramming.com/tutorial/const_correctness.html
+
 # 🧠   MODULE 01 - Allocation de memoire, pointeurs vers membres, references, switch
 
 ![Screenshot](module_01_img.png)
@@ -38,8 +42,22 @@ Voici quelques liens de documentation qui pourraient vous accompagner tout au lo
 
 ## Pointeurs & References
 
-* https://cdiese.fr/cpp-pointer-reference/
+* Difference entre pointeurs et references : https://waytolearnx.com/2018/09/difference-entre-pointeur-et-reference.html
+* Aide-memoire syntaxique des pointeurs et des references : https://cdiese.fr/cpp-pointer-reference/
 
 ## Switch / Case / Default
 
 * https://fr.acervolima.com/instruction-switch-en-c-c/
+
+# 🧠   MODULE 02 - Polymorphisme ad-hoc, surcharge d’opérateurs et forme canonique
+
+## Heritages et polymorphismes
+
+* http://robert.cireddu.free.fr/SNIR/Cours%20sur%20heritage%20et%20le%20polymorphisme.pdf
+
+## Surcharge d'operateurs et forme canonique
+
+* Un tres bon resume des notions et des exceptions : https://cpp.developpez.com/cours/cppavance/
+* https://learntutorials.net/fr/cplusplus/topic/562/surcharge-de-l-operateur
+* http://lacl.univ-paris12.fr/cegielski/CPP/ch6.pdf
+
