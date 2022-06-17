@@ -18,8 +18,19 @@ Voici quelques liens de documentation qui pourraient vous accompagner tout au lo
 * Pas de norme sur les modules ! Mais il est recommandable tout de meme de bien coder efficacement et clairement. Les conseils de l'ANSSI (Agence Nationale de la Securite des Systemes d'Information, ce n'est pas rien) 🚨 vous y aident : https://www.ssi.gouv.fr/uploads/2020/05/anssi-guide-regles_de_programmation_pour_le_developpement_securise_de_logiciels_en_langage_c.pdf 
 # 🧑‍🏫   MODULE 00 - Namescapes, classes, fonctions membres, stdio, streams, listes d'initialisation, static, const, et autres bases
 
-![Screenshot](module_00_img.png)
+![Screenshot](module_000_img.png)
 
+## Namescapes
+
+* http://sdz.tdct.org/sdz/les-espaces-de-noms-namespace.html
+
+## Classes
+
+* https://www.geeksforgeeks.org/c-classes-and-objects/
+
+## Const
+
+* Pourquoi utiliser _const_ ? : https://www.cprogramming.com/tutorial/const_correctness.html
 
 # 🧠   MODULE 01 - Allocation de memoire, pointeurs vers membres, references, switch
 
@@ -28,4 +39,25 @@ Voici quelques liens de documentation qui pourraient vous accompagner tout au lo
 ## New And Delete
 
 * https://www.geeksforgeeks.org/new-and-delete-operators-in-cpp-for-dynamic-memory/
+
+## Pointeurs & References
+
+* Difference entre pointeurs et references : https://waytolearnx.com/2018/09/difference-entre-pointeur-et-reference.html
+* Aide-memoire syntaxique des pointeurs et des references : https://cdiese.fr/cpp-pointer-reference/
+
+## Switch / Case / Default
+
+* https://fr.acervolima.com/instruction-switch-en-c-c/
+
+# 🏋️   MODULE 02 - Polymorphisme ad-hoc, surcharge d’opérateurs et forme canonique
+
+## Heritages et polymorphismes
+
+* http://robert.cireddu.free.fr/SNIR/Cours%20sur%20heritage%20et%20le%20polymorphisme.pdf
+
+## Surcharge d'operateurs et forme canonique
+
+* Un tres bon resume des notions et des exceptions : https://cpp.developpez.com/cours/cppavance/
+* https://learntutorials.net/fr/cplusplus/topic/562/surcharge-de-l-operateur
+* http://lacl.univ-paris12.fr/cegielski/CPP/ch6.pdf
 
