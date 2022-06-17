@@ -49,7 +49,7 @@ Voici quelques liens de documentation qui pourraient vous accompagner tout au lo
 
 * https://fr.acervolima.com/instruction-switch-en-c-c/
 
-# 🧠   MODULE 02 - Polymorphisme ad-hoc, surcharge d’opérateurs et forme canonique
+# 🏋️   MODULE 02 - Polymorphisme ad-hoc, surcharge d’opérateurs et forme canonique
 
 ## Heritages et polymorphismes
 
