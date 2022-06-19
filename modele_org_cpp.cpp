@@ -1,16 +1,14 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Point.cpp                                          :+:      :+:    :+:   */
+/*   modele_org_cpp.cpp                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/19 15:38:36 by emtran            #+#    #+#             */
-/*   Updated: 2022/06/19 18:32:46 by emtran           ###   ########.fr       */
+/*   Created: 2022/06/19 11:59:30 by emtran            #+#    #+#             */
+/*   Updated: 2022/06/19 12:01:16 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "Point.hpp"
 
 //	 ======================================
 //	|	CANONICAL FORM				       |
@@ -18,22 +16,11 @@
 
 //	 =======   DEFAULT CONSTRUCTOR   =======
 
-Point::Point() {
-
-	return ;
-}
-
 //	 =======    COPY CONSTRUCTOR     =======
 
 //	 =======        DESTRUCTOR       =======
 
 //	 =======  COPY ASSIGNEMENT OPER. =======
-
-Fixed	&Fixed::operator=(Fixed const &rhs) {
-
-	(void)rhs;
-	return(*this);
-}
 
 //	 ======================================
 //	|	CONSTRUCTOR OVERLOAD	           |

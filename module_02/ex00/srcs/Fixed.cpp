@@ -6,17 +6,25 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/17 15:35:36 by emtran            #+#    #+#             */
-/*   Updated: 2022/06/17 16:36:23 by emtran           ###   ########.fr       */
+/*   Updated: 2022/06/19 09:37:14 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
+
+//	 ===============================
+//	|	CANONICAL FORM				|
+//	 ===============================
+
+//	 =======   DEFAULT CONSTRUCTOR   =======
 
 Fixed::Fixed() {
 
 	std::cout << "Default constructor called" << std::endl;
 	return ;
 }
+
+//	 =======    COPY CONSTRUCTOR     =======
 
 Fixed::Fixed(Fixed const &src) {
 
@@ -25,11 +33,15 @@ Fixed::Fixed(Fixed const &src) {
 	return ;
 }
 
+//	 =======        DESTRUCTOR       =======
+
 Fixed::~Fixed() {
 
 	std::cout << "Deconstructor called" << std::endl;
 	return ;
 }
+
+//	 =======  COPY ASSIGNEMENT OPER. =======
 
 Fixed	&Fixed::operator=(Fixed const &rhs) {
 
@@ -37,6 +49,11 @@ Fixed	&Fixed::operator=(Fixed const &rhs) {
 	this->_nb_fixed = rhs.getRawBits();
 	return (*this);
 }
+
+
+//	 ===============================
+//	|	MEMBERS FUNCTIONS		    |
+//	 ===============================
 
 int		Fixed::getRawBits() const {
 
