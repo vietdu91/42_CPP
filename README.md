@@ -61,3 +61,7 @@ Voici quelques liens de documentation qui pourraient vous accompagner tout au lo
 * https://learntutorials.net/fr/cplusplus/topic/562/surcharge-de-l-operateur
 * http://lacl.univ-paris12.fr/cegielski/CPP/ch6.pdf
 
+## Nombres a virgule fixe
+
+* https://youtu.be/bDkR-OQiWx0
+
