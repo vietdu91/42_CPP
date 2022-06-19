@@ -68,3 +68,6 @@ Voici quelques liens de documentation qui pourraient vous accompagner tout au lo
 * https://youtu.be/bDkR-OQiWx0
 * https://books.google.fr/books?id=shU5EAAAQBAJ&pg=PA10&lpg=PA10&dq=Codage+en+virgule+fixe+bac&source=bl&ots=OJmNEGQgkf&sig=ACfU3U3XJh6xVb0rXgo-A9WAJuDnLsk1og&hl=fr&sa=X&ved=2ahUKEwiv57zzlrn4AhU-gc4BHbbuCLcQ6AF6BAgUEAM#v=onepage&q=Codage%20en%20virgule%20fixe%20bac&f=false
 
+## Binary Space Partitioning (BSP)
+
+* Comment determiner un point s'il est dans un triangle ? https://www.gamedev.net/forums/topic.asp?topic_id=295943
