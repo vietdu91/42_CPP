@@ -60,6 +60,7 @@ Voici quelques liens de documentation qui pourraient vous accompagner tout au lo
 * Un tres bon resume des notions et des exceptions : https://cpp.developpez.com/cours/cppavance/
 * https://learntutorials.net/fr/cplusplus/topic/562/surcharge-de-l-operateur
 * http://lacl.univ-paris12.fr/cegielski/CPP/ch6.pdf
+* Comment implementer les surcharges d'operateurs d'incrementation : https://docs.microsoft.com/fr-fr/cpp/cpp/increment-and-decrement-operator-overloading-cpp?view=msvc-170
 
 ## Nombres a virgule fixe
 
