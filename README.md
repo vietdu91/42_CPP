@@ -71,3 +71,4 @@ Voici quelques liens de documentation qui pourraient vous accompagner tout au lo
 ## Binary Space Partitioning (BSP)
 
 * Comment determiner un point s'il est dans un triangle ? https://www.gamedev.net/forums/topic.asp?topic_id=295943
+* Calculateur du BSP : https://planetcalc.com/8108/
