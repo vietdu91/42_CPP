@@ -6,14 +6,13 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/19 11:57:10 by emtran            #+#    #+#             */
-/*   Updated: 2022/06/19 15:24:18 by emtran           ###   ########.fr       */
+/*   Updated: 2022/06/20 12:25:29 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
 
 int main() {
-
 
 	Fixed a;
 	Fixed const b(Fixed(5.05f) * Fixed(2));

@@ -6,7 +6,7 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/19 18:20:22 by emtran            #+#    #+#             */
-/*   Updated: 2022/06/19 18:23:44 by emtran           ###   ########.fr       */
+/*   Updated: 2022/06/20 08:41:07 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 Fixed	scalar(Point a, Point b, Point c)
 {
-	return ((a.getX() - c.getX()) * (b.getY() - c.getY()) - \
-			(b.getX() - c.getX()) * (a.getY() - c.getY()));
+	return ((a.get_x() - c.get_x()) * (b.get_y() - c.get_y()) - \
+			(b.get_x() - c.get_x()) * (a.get_y() - c.get_y()));
 }
 
-bool	bsp(Point a, Point b, Point c, Point point)
+bool	bsp(Point a, Point b, Point c, Point const point)
 {
 	Fixed	d1;
 	Fixed	d2;

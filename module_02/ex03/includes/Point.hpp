@@ -6,7 +6,7 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/19 15:28:46 by emtran            #+#    #+#             */
-/*   Updated: 2022/06/19 15:36:27 by emtran           ###   ########.fr       */
+/*   Updated: 2022/06/20 08:52:30 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,16 @@ class Point {
 
 		Point	&operator=(Point const &rhs);
 
+		Fixed	get_x() const;
+		Fixed	get_y() const;
+
 	private:
 		Fixed const _x;
 		Fixed const _y;
 };
+
+std::ostream	&operator<<(std::ostream &o, Point const &rhs);
+bool			bsp(Point a, Point b, Point c, Point const point);
+
+#endif
 

@@ -100,7 +100,7 @@ $(NAME):	${OBJS} ${INCLUDES}
 
 
 			@printf "\n\n$(SKY)████████████████  😊 😊 😊  PENSEE DU JOUR POUR TE FAIRE SOURIRE  😊 😊 😊  ████████████████$(RESET)"
-			@printf "\n\n$(BLUE_B)Look a pig in its eyes, and understand the truth behind bacon... 🩸\n\n$(RESET)"
+			@printf "\n\n$(BLUE_B)Un probleme sans solution est un probleme mal pose 📡\n\n$(RESET)"
 			@printf "$(YELLOW)============$(RESET)"
 			@printf "\e[38;5;227m============$(RESET)"
 			@printf "\e[38;5;228m============$(RESET)"
