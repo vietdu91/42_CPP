@@ -51,6 +51,8 @@ Voici quelques liens de documentation qui pourraient vous accompagner tout au lo
 
 # 🏋️   MODULE 02 - Polymorphisme ad-hoc, surcharge d’opérateurs et forme canonique
 
+![Screenshot](module_02_img.png)
+
 ## Heritages et polymorphismes
 
 * http://robert.cireddu.free.fr/SNIR/Cours%20sur%20heritage%20et%20le%20polymorphisme.pdf
@@ -72,3 +74,5 @@ Voici quelques liens de documentation qui pourraient vous accompagner tout au lo
 
 * Comment determiner un point s'il est dans un triangle ? https://www.gamedev.net/forums/topic.asp?topic_id=295943
 * Calculateur du BSP : https://planetcalc.com/8108/
+
+# 💰   MODULE 03 - Heritage
