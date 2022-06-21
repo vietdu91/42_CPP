@@ -1,5 +1,5 @@
 	# Library Name #
-NAME		=	ClapTrap
+NAME		=	ACTION
 
 	# Compilator #
 ifeq ($(shell uname -s),Darwin)
