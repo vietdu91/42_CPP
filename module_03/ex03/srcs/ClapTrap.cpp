@@ -6,7 +6,7 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/20 18:17:40 by emtran            #+#    #+#             */
-/*   Updated: 2022/07/18 17:46:56 by emtran           ###   ########.fr       */
+/*   Updated: 2022/07/18 14:11:52 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@
 ClapTrap::ClapTrap() : _name("Mister Nobody"), _hit(10), _energy(10), \
 _attack_damage(0) {
 
-	std::cout << GREEN_B << "🩸 It's up to " << RESET << RED_B << this->_name << RESET \
-	<< GREEN_B << " to FIGHT !" << RESET << std::endl;
+	std::cout << GREEN_B << "🩸 It's up to " << RESET << PINK_B << "ClapTrap " << RESET \
+	<< RED_B  << this->_name << RESET << GREEN_B << " to FIGHT !" << RESET << std::endl;
 	return ;
 }
 
@@ -30,8 +30,8 @@ _attack_damage(0) {
 
 ClapTrap::ClapTrap(ClapTrap const &src) : _name(src._name) {
 
-	std::cout << GREEN_B << "🩸 It's up to an other " << RESET << RED_B << this->_name << RESET \
-	<< GREEN_B << " to FIGHT !" << RESET << std::endl;
+	std::cout << GREEN_B << "🩸 It's up to an other " << RESET << PINK_B <<  "ClapTrap " << RESET \
+	<< RED_B  << this->_name << RESET << GREEN_B << " to FIGHT !" << RESET << std::endl;
 	*this = src;
 	return ;
 }
@@ -44,25 +44,7 @@ ClapTrap::~ClapTrap () {
 	" is fainted !" << RESET << std::endl;
 	return ;
 }
-
 //	 =======  COPY ASSIGNEMENT OPER. =======
-
-ClapTrap::ClapTrap(std::string const name) : _name(name), _hit(10), _energy(10), \
-_attack_damage(0) {
-
-	std::cout << GREEN_B << "🩸 It's up to " << RESET << RED_B << this->_name << RESET << GREEN_B << \
-	" to FIGHT !" << RESET << std::endl;
-	return ;
-}
-
-//	 ======================================
-//	|	CONSTRUCTOR OVERLOAD	           |
-//	 ======================================
-
-
-//	 ======================================
-//	|	OPERATOR OVERLOAD	               |
-//	 ======================================
 
 ClapTrap	&ClapTrap::operator=(ClapTrap const &rhs) {
 
@@ -72,9 +54,31 @@ ClapTrap	&ClapTrap::operator=(ClapTrap const &rhs) {
 	this->_attack_damage = rhs._attack_damage;
 	return (*this);
 }
+
+//	 ======================================
+//	|	CONSTRUCTOR OVERLOAD	           |
+//	 ======================================
+
+ClapTrap::ClapTrap(std::string const name) : _name(name), _hit(100), _energy(50), \
+_attack_damage(20) {
+
+	std::cout << GREEN_B << "🩸 It's up to " << RESET << PINK_B << "ClapTrap " << RESET \
+	<< RED_B  << this->_name << RESET << GREEN_B << " to FIGHT !" << RESET << std::endl;
+	return ;
+}
+
+//	 ======================================
+//	|	OPERATOR OVERLOAD	               |
+//	 ======================================
+
 //	 ======================================
 //	|	MEMBERS FUNCTIONS		           |
 //	 ======================================
+
+std::string	const	ClapTrap::getName() const {
+
+	return (_name);
+}
 
 void	ClapTrap::takeDamage(unsigned int amount) {
 

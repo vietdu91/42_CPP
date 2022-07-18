@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Jun 21 13:40:01 2022
+# Make data base, printed on Mon Jul 18 18:57:03 2022
 
 # Variables
 
@@ -43,9 +43,9 @@ SHELL = /bin/sh
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
-_ = /usr/bin/dbus-update-activation-environment
+_ = /usr/share/code/code
 # environment
-JOURNAL_STREAM = 9:72214
+JOURNAL_STREAM = 9:2591515
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile
@@ -65,23 +65,25 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/40120/bus
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-MANAGERPID = 21813
+MANAGERPID = 635467
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/40120/vscode-ipc-c43de927-6342-4912-a935-e87e3868dc02.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/40120/vscode-ipc-7a091ae8-b128-416c-a8d8-061fc1da4a03.sock
 # environment
 VSCODE_CWD = /mnt/nfs/homes/emtran
 # environment
-XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session0
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session10
 # environment
-KRB5CCNAME = FILE:/tmp/krb5cc_40120_LyPmOd
+KRB5CCNAME = FILE:/tmp/krb5cc_40120_0FTq7u
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+PATH = /mnt/nfs/homes/emtran/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 # environment
 GPG_AGENT_INFO = /run/user/40120/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/e1r3p15.42.fr:@/tmp/.ICE-unix/22273,unix/e1r3p15.42.fr:/tmp/.ICE-unix/22273
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# environment
+SESSION_MANAGER = local/e1r4p3.clusters.42paris.fr:@/tmp/.ICE-unix/635983,unix/e1r4p3.clusters.42paris.fr:/tmp/.ICE-unix/635983
 # environment
 XDG_RUNTIME_DIR = /run/user/40120
 # environment
@@ -91,17 +93,19 @@ VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = f409c640538f42fe9692c918ac024512
+INVOCATION_ID = 757ccb38cb6a4f40bcbf820d35f95a77
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
 XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/emtran
 # environment
+LS_COLORS = 
+# environment
 XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/40120/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 22852
+GIO_LAUNCHED_DESKTOP_FILE_PID = 636539
 # automatic
 %F = $(notdir $%)
 # environment
@@ -113,7 +117,7 @@ PWD = /mnt/nfs/homes/emtran/Desktop/42_cpp
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 22236
+SSH_AGENT_PID = 635946
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -129,6 +133,8 @@ LOGNAME = emtran
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
+ZSH = /mnt/nfs/homes/emtran/.oh-my-zsh
+# environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # environment
 GNOME_DESKTOP_SESSION_ID = this-is-deprecated
@@ -143,7 +149,7 @@ MAKECMDGOALS := all
 # environment
 QT_IM_MODULE = ibus
 # environment
-SHLVL = 0
+SHLVL = 1
 # environment
 IM_CONFIG_PHASE = 1
 # default
@@ -156,10 +162,14 @@ USER = emtran
 XDG_CURRENT_DESKTOP = Unity
 # environment
 LIBVIRT_DEFAULT_URI = qemu:///system
+# environment
+LESS = -R
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # default
 MAKE_COMMAND := make
+# environment
+OLDPWD = /mnt/nfs/homes/emtran
 # default
 .VARIABLES := 
 # automatic
@@ -189,6 +199,8 @@ MAKEFILES :=
 # automatic
 <F = $(notdir $<)
 # environment
+PAGER = less
+# environment
 LC_ALL = C
 # environment
 GJS_DEBUG_TOPICS = JS ERROR;JS LOG
@@ -209,9 +221,9 @@ LANG = C
 # environment
 DOCKER_HOST = unix:///run/user/40120/docker.sock
 # environment
-VSCODE_PID = 22852
+VSCODE_PID = 636539
 # variable set hash-table stats:
-# Load=99/1024=10%, Rehash=0, Collisions=7/121=6%
+# Load=105/1024=10%, Rehash=0, Collisions=7/127=6%
 
 # Pattern-specific Variable Values
 
@@ -219,7 +231,7 @@ VSCODE_PID = 22852
 
 # Directories
 
-# . (device 55, inode 235837033): 13 files, no impossibilities.
+# . (device 59, inode 235837033): 13 files, no impossibilities.
 
 # 13 files, no impossibilities in 1 directories.
 
@@ -276,7 +288,8 @@ GNUmakefile:
 
 # strcache performance: lookups = 24 / hit rate = 12%
 # hash-table stats:
+ 
 # Load=21/8192=0%, Rehash=0, Collisions=2/24=8%
-# Finished Make data base on Tue Jun 21 13:40:01 2022
+# Finished Make data base on Mon Jul 18 18:57:03 2022
 
  

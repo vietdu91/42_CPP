@@ -6,7 +6,7 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/20 18:11:28 by emtran            #+#    #+#             */
-/*   Updated: 2022/07/15 14:19:11 by emtran           ###   ########.fr       */
+/*   Updated: 2022/07/18 14:11:44 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,11 +56,13 @@ class ClapTrap {
 
 		ClapTrap	&operator=(ClapTrap const &rhs);
 
+		std::string const	getName() const;
+
 		void	attack(const std::string &target);
 		void	takeDamage(unsigned int amount);
 		void	beRepaired(unsigned int amount);
 
-	private :
+	protected :
 		std::string		_name;
 		unsigned int	_hit;
 		unsigned int	_energy;
