@@ -6,7 +6,7 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 12:10:57 by emtran            #+#    #+#             */
-/*   Updated: 2022/07/18 14:34:27 by emtran           ###   ########.fr       */
+/*   Updated: 2022/07/19 17:46:00 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@
 
 //	 =======   DEFAULT CONSTRUCTOR   =======
 
-DiamondTrap::DiamondTrap() : ClapTrap(), FragTrap(), _name("Mister Nobody") {
+DiamondTrap::DiamondTrap() : ClapTrap(), ScavTrap(), FragTrap(), _name("Mister Nobody") {
 
 	this->_hit = FragTrap::_hit;
-	this->_energy = ScavTrap::_energy;
+	ScavTrap::initEnergy();
 	this->_attack_damage = FragTrap::_attack_damage;
 	std::cout << GREEN_B << "💎 It's up to " << RESET << PINK_B << "DiamondTrap " << RESET \
 	<< RED_B  << this->_name << RESET << GREEN_B << " to FIGHT !" << RESET << std::endl;
@@ -64,6 +64,9 @@ DiamondTrap	&DiamondTrap::operator=(DiamondTrap const &rhs) {
 
 DiamondTrap::DiamondTrap(std::string const name) : ClapTrap(name + "_clap_name"), _name(name) {
 
+	this->_hit = FragTrap::_hit;
+	ScavTrap::initEnergy();
+	this->_attack_damage = FragTrap::_attack_damage;
 	std::cout << GREEN_B << "💎 It's up to " << RESET << PINK_B << "DiamondTrap " << RESET \
 	<< RED_B  << this->_name << RESET << GREEN_B << " to FIGHT !" << RESET << std::endl;
 	return ;

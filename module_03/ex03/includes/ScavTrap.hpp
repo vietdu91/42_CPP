@@ -6,7 +6,7 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 13:55:38 by emtran            #+#    #+#             */
-/*   Updated: 2022/07/18 14:25:34 by emtran           ###   ########.fr       */
+/*   Updated: 2022/07/19 17:17:18 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ class ScavTrap : public virtual ClapTrap {
 
 		ScavTrap	&operator=(ScavTrap const &rhs);
 
+		void	initEnergy();
 		void	attack(const std::string &target);
 		void	guardGate();
 };

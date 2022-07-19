@@ -6,7 +6,7 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/15 13:38:56 by emtran            #+#    #+#             */
-/*   Updated: 2022/07/18 14:36:56 by emtran           ###   ########.fr       */
+/*   Updated: 2022/07/19 16:00:33 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,9 @@
 
 FragTrap::FragTrap() : ClapTrap() {
 
+	this->_hit = 100;
+	this->_energy = 100;
+	this->_attack_damage = 30;
 	std::cout << GREEN_B << "🩸 It's up to " << RESET << PINK_B << "ScapTrap " << RESET \
 	<< RED_B << this->_name << RESET << GREEN_B << " to FIGHT !" << RESET << std::endl;
 	return ;
@@ -29,6 +32,9 @@ FragTrap::FragTrap() : ClapTrap() {
 
 FragTrap::FragTrap(FragTrap const &src) : ClapTrap(src) {
 
+	this->_hit = 100;
+	this->_energy = 100;
+	this->_attack_damage = 30;
 	std::cout << GREEN_B << "🩸 It's up to an other " << RESET << PINK_B << "FrapTrap " << RESET \
 	<< RED_B  << this->_name << RESET << GREEN_B << " to FIGHT !" << RESET << std::endl;
 	*this = src;

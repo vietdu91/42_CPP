@@ -6,7 +6,7 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 13:53:45 by emtran            #+#    #+#             */
-/*   Updated: 2022/06/23 15:35:55 by emtran           ###   ########.fr       */
+/*   Updated: 2022/07/19 16:00:37 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,9 @@
 
 ScavTrap::ScavTrap() : ClapTrap() {
 
+	this->_hit = 100;
+	this->_energy = 50;
+	this->_attack_damage = 20;
 	std::cout << GREEN_B << "🩸 It's up to " << RESET << PINK_B << "ScapTrap " << RESET \
 	<< RED_B << this->_name << RESET << GREEN_B << " to FIGHT !" << RESET << std::endl;
 	return ;
@@ -29,6 +32,9 @@ ScavTrap::ScavTrap() : ClapTrap() {
 
 ScavTrap::ScavTrap(ScavTrap const &src) : ClapTrap(src) {
 
+	this->_hit = 100;
+	this->_energy = 50;
+	this->_attack_damage = 20;
 	std::cout << GREEN_B << "🩸 It's up to an other " << RESET << PINK_B << "ScapTrap " << RESET \
 	<< RED_B  << this->_name << RESET << GREEN_B << " to FIGHT !" << RESET << std::endl;
 	*this = src;
