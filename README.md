@@ -76,3 +76,15 @@ Voici quelques liens de documentation qui pourraient vous accompagner tout au lo
 * Calculateur du BSP : https://planetcalc.com/8108/
 
 # 💰   MODULE 03 - Heritage
+
+![Screenshot](module_03_img.png)
+
+## Heritage simple 
+
+* Le celebre exemple du chien et l'oiseau qui sont des animaux : http://igm.univ-mlv.fr/~chilowi/lectures/content/cpp/course/virtual.std.html
+
+## Heritage multiple
+
+* Un petit cours explicatif sur l'heritage multiple : https://ressources.unisciel.fr/algoprog/s28hmult/emodules/hm00micours1/res/hm00cours-texte-cpp.pdf
+* Exposition du probleme de diamant : https://en.wikipedia.org/wiki/Multiple_inheritance#The_diamond_problem
+* A quoi ca sert de mettre un virtual class : https://www.geeksforgeeks.org/virtual-base-class-in-c/
