@@ -32,6 +32,10 @@ Voici quelques liens de documentation qui pourraient vous accompagner tout au lo
 
 * Pourquoi utiliser _const_ ? : https://www.cprogramming.com/tutorial/const_correctness.html
 
+## Getline
+
+* Pourquoi std::getline() casse les couilles : https://www.journaldev.com/39743/getline-in-c-plus-plus
+
 # 🧠   MODULE 01 - Allocation de memoire, pointeurs vers membres, references, switch
 
 ![Screenshot](module_01_img.png)
