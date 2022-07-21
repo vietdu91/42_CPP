@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Jul 19 15:57:02 2022
+# Make data base, printed on Thu Jul 21 17:59:59 2022
 
 # Variables
 
@@ -43,9 +43,9 @@ SHELL = /bin/sh
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
-_ = /usr/bin/dbus-update-activation-environment
+_ = /usr/share/code/code
 # environment
-JOURNAL_STREAM = 9:55156
+JOURNAL_STREAM = 9:1438657
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile
@@ -65,23 +65,25 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/40120/bus
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-MANAGERPID = 4004
+MANAGERPID = 227431
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/40120/vscode-ipc-223627b4-b9fa-44ab-833f-3fa51964de35.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/40120/vscode-ipc-28824774-93b3-41e5-ab7e-df5503fd5568.sock
 # environment
 VSCODE_CWD = /mnt/nfs/homes/emtran
 # environment
-XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session0
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session4
 # environment
-KRB5CCNAME = FILE:/tmp/krb5cc_40120_P8vPX5
+KRB5CCNAME = FILE:/tmp/krb5cc_40120_ATdGAV
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+PATH = /mnt/nfs/homes/emtran/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 # environment
 GPG_AGENT_INFO = /run/user/40120/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/e1r6p15.clusters.42paris.fr:@/tmp/.ICE-unix/4526,unix/e1r6p15.clusters.42paris.fr:/tmp/.ICE-unix/4526
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# environment
+SESSION_MANAGER = local/e1r4p23.clusters.42paris.fr:@/tmp/.ICE-unix/227945,unix/e1r4p23.clusters.42paris.fr:/tmp/.ICE-unix/227945
 # environment
 XDG_RUNTIME_DIR = /run/user/40120
 # environment
@@ -91,17 +93,19 @@ VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = ec0eb76d62dd43bb87795f20fb29fcdd
+INVOCATION_ID = 47618484b43a4d7182f0d1ac7bea9de7
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
 XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/emtran
 # environment
+LS_COLORS = 
+# environment
 XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/40120/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 5843
+GIO_LAUNCHED_DESKTOP_FILE_PID = 236212
 # automatic
 %F = $(notdir $%)
 # environment
@@ -113,7 +117,7 @@ PWD = /mnt/nfs/homes/emtran/Desktop/42_cpp
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 4490
+SSH_AGENT_PID = 227909
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -128,6 +132,8 @@ VSCODE_CODE_CACHE_PATH = /mnt/nfs/homes/emtran/.config/Code/CachedData/30d9c6cd9
 LOGNAME = emtran
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+ZSH = /mnt/nfs/homes/emtran/.oh-my-zsh
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # environment
@@ -156,10 +162,14 @@ USER = emtran
 XDG_CURRENT_DESKTOP = Unity
 # environment
 LIBVIRT_DEFAULT_URI = qemu:///system
+# environment
+LESS = -R
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # default
 MAKE_COMMAND := make
+# environment
+OLDPWD = /mnt/nfs/homes/emtran
 # default
 .VARIABLES := 
 # automatic
@@ -189,6 +199,8 @@ MAKEFILES :=
 # automatic
 <F = $(notdir $<)
 # environment
+PAGER = less
+# environment
 LC_ALL = C
 # environment
 GJS_DEBUG_TOPICS = JS ERROR;JS LOG
@@ -209,9 +221,9 @@ LANG = C
 # environment
 DOCKER_HOST = unix:///run/user/40120/docker.sock
 # environment
-VSCODE_PID = 5843
+VSCODE_PID = 236212
 # variable set hash-table stats:
-# Load=99/1024=10%, Rehash=0, Collisions=7/121=6%
+# Load=105/1024=10%, Rehash=0, Collisions=7/127=6%
 
 # Pattern-specific Variable Values
 
@@ -219,9 +231,9 @@ VSCODE_PID = 5843
 
 # Directories
 
-# . (device 55, inode 235837033): 13 files, no impossibilities.
+# . (device 59, inode 235837033): 15 files, no impossibilities.
 
-# 13 files, no impossibilities in 1 directories.
+# 15 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -271,12 +283,13 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 21 / storage = 227 B / avg = 10 B
-# current buf: size = 8162 B / used = 227 B / count = 21 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 23 / storage = 255 B / avg = 11 B
+# current buf: size = 8162 B / used = 255 B / count = 23 / avg = 11 B
 
-# strcache performance: lookups = 24 / hit rate = 12%
+# strcache performance: lookups = 26 / hit rate = 11%
 # hash-table stats:
-# Load=21/8192=0%, Rehash=0, Collisions=2/24=8%
-# Finished Make data base on Tue Jul 19 15:57:02 2022
+ 
+# Load=23/8192=0%, Rehash=0, Collisions=2/26=8%
+# Finished Make data base on Thu Jul 21 17:59:59 2022
 
  
