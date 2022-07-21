@@ -96,3 +96,5 @@ Voici quelques liens de documentation qui pourraient vous accompagner tout au lo
 # 💰   MODULE 03 - Polymorphisme par sous-typage, classes abstraites, interfaces
 
 * Ultra bon recap des notions d'heritage, de classes et du polymorphisme : https://www.labri.fr/perso/bourqui/downloads/cours/AP2/support-C%2B%2B-classes.pdf
+* Un constructeur peut-il etre virtual ? : https://www.tutorialspoint.com/virtual-constructor-in-cplusplus
+* Et du coup, un deconstructeur peut-il etre aussi virtual ? : https://www.geeksforgeeks.org/virtual-destructor/
