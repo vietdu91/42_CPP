@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Jul 21 17:59:59 2022
+# Make data base, printed on Fri Jul 22 16:25:11 2022
 
 # Variables
 
@@ -45,7 +45,7 @@ VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupp
 # environment
 _ = /usr/share/code/code
 # environment
-JOURNAL_STREAM = 9:1438657
+JOURNAL_STREAM = 9:142690
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile
@@ -65,15 +65,15 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/40120/bus
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-MANAGERPID = 227431
+MANAGERPID = 15585
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/40120/vscode-ipc-28824774-93b3-41e5-ab7e-df5503fd5568.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/40120/vscode-ipc-a647cd1d-cbd7-41e1-a531-7e161884c24c.sock
 # environment
 VSCODE_CWD = /mnt/nfs/homes/emtran
 # environment
-XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session4
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session0
 # environment
-KRB5CCNAME = FILE:/tmp/krb5cc_40120_ATdGAV
+KRB5CCNAME = FILE:/tmp/krb5cc_40120_SpGJGY
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
@@ -83,7 +83,7 @@ GPG_AGENT_INFO = /run/user/40120/gnupg/S.gpg-agent:0:1
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
-SESSION_MANAGER = local/e1r4p23.clusters.42paris.fr:@/tmp/.ICE-unix/227945,unix/e1r4p23.clusters.42paris.fr:/tmp/.ICE-unix/227945
+SESSION_MANAGER = local/e1r5p6.clusters.42paris.fr:@/tmp/.ICE-unix/16109,unix/e1r5p6.clusters.42paris.fr:/tmp/.ICE-unix/16109
 # environment
 XDG_RUNTIME_DIR = /run/user/40120
 # environment
@@ -93,7 +93,7 @@ VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 47618484b43a4d7182f0d1ac7bea9de7
+INVOCATION_ID = 20ca2fa2405741f1adb652771f42ab25
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -105,7 +105,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/40120/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 236212
+GIO_LAUNCHED_DESKTOP_FILE_PID = 16680
 # automatic
 %F = $(notdir $%)
 # environment
@@ -117,7 +117,7 @@ PWD = /mnt/nfs/homes/emtran/Desktop/42_cpp
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 227909
+SSH_AGENT_PID = 16073
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -221,7 +221,7 @@ LANG = C
 # environment
 DOCKER_HOST = unix:///run/user/40120/docker.sock
 # environment
-VSCODE_PID = 236212
+VSCODE_PID = 16680
 # variable set hash-table stats:
 # Load=105/1024=10%, Rehash=0, Collisions=7/127=6%
 
@@ -231,7 +231,7 @@ VSCODE_PID = 236212
 
 # Directories
 
-# . (device 59, inode 235837033): 15 files, no impossibilities.
+# . (device 55, inode 235837033): 15 files, no impossibilities.
 
 # 15 files, no impossibilities in 1 directories.
 
@@ -287,9 +287,9 @@ GNUmakefile:
 # current buf: size = 8162 B / used = 255 B / count = 23 / avg = 11 B
 
 # strcache performance: lookups = 26 / hit rate = 11%
-# hash-table stats:
  
+# hash-table stats:
 # Load=23/8192=0%, Rehash=0, Collisions=2/26=8%
-# Finished Make data base on Thu Jul 21 17:59:59 2022
+# Finished Make data base on Fri Jul 22 16:25:11 2022
 
  

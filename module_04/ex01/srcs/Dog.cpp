@@ -1,16 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   WrongCat.cpp                                       :+:      :+:    :+:   */
+/*   Dog.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/21 15:26:41 by emtran            #+#    #+#             */
-/*   Updated: 2022/07/22 13:12:09 by emtran           ###   ########.fr       */
+/*   Created: 2022/07/21 13:48:34 by emtran            #+#    #+#             */
+/*   Updated: 2022/07/22 15:44:44 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "WrongCat.hpp"
+#include "Brain.hpp"
+#include "Dog.hpp"
 
 //	 ======================================
 //	|	CANONICAL FORM				       |
@@ -18,38 +19,47 @@
 
 //	 =======   DEFAULT CONSTRUCTOR   =======
 
-WrongCat::WrongCat() : WrongAnimal() {
+Dog::Dog() : Animal() {
 
-	this->_type = "WrongCat";
-	std::cout << PINK_B << "🦁 WrongCat" << RESET << GREEN_B << " was born !" \
+	this->_type = "Dog";
+	this->_brain = new Brain();
+	std::cout << PINK_B << "🐶 Dog" << RESET << GREEN_B << " was born !" \
 	<< RESET << std::endl;
 	return ;
 }
 
 //	 =======    COPY CONSTRUCTOR     =======
 
-WrongCat::WrongCat(WrongCat const &src) : WrongAnimal() {
+Dog::Dog(Dog const &src) : Animal() {
 
 	*this = src;
-	std::cout << GREEN_B << "🦁 An other " << RESET << PINK_B << "WrongCat" \
+	std::cout << GREEN_B << "🐶 An other " << RESET << PINK_B << "Dog" \
 	<< RESET << GREEN_B << " was born !" << RESET << std::endl;
 	return ;
 }
 
 //	 =======        DESTRUCTOR       =======
 
-WrongCat::~WrongCat() {
+Dog::~Dog() {
 
-	std::cout << PINK_B << "🌅 WrongCat" << RESET << RED_B << " lived a very good life..." \
+	delete this->_brain;
+	std::cout << PINK_B << "🌅 Dog" << RESET << RED_B << " lived a very good life..." \
 	<< RESET << std::endl;
 	return ;
 }
 
 //	 =======  COPY ASSIGNEMENT OPER. =======
 
-WrongCat	&WrongCat::operator=(WrongCat const &rhs) {
+Dog	&Dog::operator=(Dog const &rhs) {
 
 	this->_type = rhs._type;
+	return (*this);
+}
+
+Animal	&Dog::operator=(Animal const &rhs)
+{
+	this->_type = rhs.getType();
+	*(this->_brain) = *(rhs.getBrain());
 	return (*this);
 }
 
@@ -65,9 +75,14 @@ WrongCat	&WrongCat::operator=(WrongCat const &rhs) {
 //	|	MEMBERS FUNCTIONS		           |
 //	 ======================================
 
-void	WrongCat::makeSound() const {
+void	Dog::makeSound() const {
 
-	std::cout << RED_B << "🦁 🔊 " << this->getType() << RESET << YELLOW_B << \
-	" said 'GROOOOOOOOARRR! I Just Can't Wait To Be King!'!!!" << RESET << std::endl;
+	std::cout << RED_B << "🐶 🔊 " << this->getType() << RESET << YELLOW_B << \
+	" said 'OUAF OUAAAF! I want Royal Canin!'!!!" << RESET << std::endl;
 	return ;
+}
+
+Brain	*Dog::getBrain() const
+{
+	return (this->_brain);
 }

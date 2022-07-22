@@ -6,7 +6,7 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/21 13:48:34 by emtran            #+#    #+#             */
-/*   Updated: 2022/07/21 16:54:12 by emtran           ###   ########.fr       */
+/*   Updated: 2022/07/22 13:11:21 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 Dog::Dog() : Animal() {
 
 	this->_type = "Dog";
-	std::cout << PINK_B << "🐶 " << this->_type << RESET << GREEN_B << " was born !" \
+	std::cout << PINK_B << "🐶 Dog" << RESET << GREEN_B << " was born !" \
 	<< RESET << std::endl;
 	return ;
 }
@@ -31,7 +31,7 @@ Dog::Dog() : Animal() {
 Dog::Dog(Dog const &src) : Animal() {
 
 	*this = src;
-	std::cout << GREEN_B << "🐶 An other " << RESET << PINK_B << this->_type \
+	std::cout << GREEN_B << "🐶 An other " << RESET << PINK_B << "Dog" \
 	<< RESET << GREEN_B << " was born !" << RESET << std::endl;
 	return ;
 }
@@ -40,7 +40,7 @@ Dog::Dog(Dog const &src) : Animal() {
 
 Dog::~Dog() {
 
-	std::cout << PINK_B << "🌅 " << this->_type << RESET << RED_B << " lived a very good life..." \
+	std::cout << PINK_B << "🌅 Dog" << RESET << RED_B << " lived a very good life..." \
 	<< RESET << std::endl;
 	return ;
 }

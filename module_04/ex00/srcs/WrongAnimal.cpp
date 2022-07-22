@@ -6,7 +6,7 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/21 15:23:47 by emtran            #+#    #+#             */
-/*   Updated: 2022/07/21 17:07:19 by emtran           ###   ########.fr       */
+/*   Updated: 2022/07/22 13:11:43 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 
 WrongAnimal::WrongAnimal() : _type("WrongAnimal") {
 
-	std::cout << PINK_B << "👽 " << this->_type << RESET << GREEN_B << " was born !" \
+	std::cout << PINK_B << "👽 WrongAnimal" << RESET << GREEN_B << " was born !" \
 	<< RESET << std::endl;
 	return ;
 }
@@ -30,7 +30,7 @@ WrongAnimal::WrongAnimal() : _type("WrongAnimal") {
 WrongAnimal::WrongAnimal(WrongAnimal const &src) {
 
 	*this = src;
-	std::cout << GREEN_B << "👽 An other " << RESET << PINK_B << this->_type \
+	std::cout << GREEN_B << "👽 An other " << RESET << PINK_B << "WrongAnimal" \
 	<< RESET << GREEN_B << " was born !" << RESET << std::endl;
 	return ;
 }

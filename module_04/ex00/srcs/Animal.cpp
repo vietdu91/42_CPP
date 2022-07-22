@@ -6,7 +6,7 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/21 13:15:14 by emtran            #+#    #+#             */
-/*   Updated: 2022/07/21 17:05:31 by emtran           ###   ########.fr       */
+/*   Updated: 2022/07/22 13:12:34 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 
 Animal::Animal() : _type("Animal") {
 
-	std::cout << PINK_B << "🐾 " << this->_type << RESET << GREEN_B << " was born !" \
+	std::cout << PINK_B << "🐾 Animal" << RESET << GREEN_B << " was born !" \
 	<< RESET << std::endl;
 	return ;
 }
@@ -30,7 +30,7 @@ Animal::Animal() : _type("Animal") {
 Animal::Animal(Animal const &src) {
 
 	*this = src;
-	std::cout << GREEN_B << "🐾 An other " << RESET << PINK_B << this->_type \
+	std::cout << GREEN_B << "🐾 An other " << RESET << PINK_B << "Animal" \
 	<< RESET << GREEN_B << " was born !" << RESET << std::endl;
 	return ;
 }
@@ -38,7 +38,7 @@ Animal::Animal(Animal const &src) {
 
 Animal::~Animal() {
 
-	std::cout << PINK_B << "🌅 " << "Animal" << RESET << RED_B << " lived a very good life..." \
+	std::cout << PINK_B << "🌅 Animal" << RESET << RED_B << " lived a very good life..." \
 	<< RESET << std::endl;
 	return ;
 }

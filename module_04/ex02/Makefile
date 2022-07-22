@@ -1,5 +1,5 @@
 	# Library Name #
-NAME		=	BURN_THE_WORLD
+NAME		=	ABSTRACT_CLASS
 
 	# Compilator #
 ifeq ($(shell uname -s),Darwin)
@@ -10,12 +10,12 @@ endif
 
 	# Variables #
 SRCS		=		main.cpp \
-					Animal.cpp \
+					AAnimal.cpp \
 					Brain.cpp \
 					Cat.cpp \
 					Dog.cpp \
 
-INCLUDES	=		includes/Animal.hpp \
+INCLUDES	=		includes/AAnimal.hpp \
 					includes/Brain.hpp \
 					includes/Cat.hpp \
 					includes/colors.hpp \

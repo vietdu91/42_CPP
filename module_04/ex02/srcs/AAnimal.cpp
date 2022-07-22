@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   WrongCat.cpp                                       :+:      :+:    :+:   */
+/*   AAnimal.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/21 15:26:41 by emtran            #+#    #+#             */
-/*   Updated: 2022/07/22 13:12:09 by emtran           ###   ########.fr       */
+/*   Created: 2022/07/21 13:15:14 by emtran            #+#    #+#             */
+/*   Updated: 2022/07/22 15:28:24 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "WrongCat.hpp"
+#include "AAnimal.hpp"
 
 //	 ======================================
 //	|	CANONICAL FORM				       |
@@ -18,36 +18,35 @@
 
 //	 =======   DEFAULT CONSTRUCTOR   =======
 
-WrongCat::WrongCat() : WrongAnimal() {
+AAnimal::AAnimal() : _type("AAnimal") {
 
-	this->_type = "WrongCat";
-	std::cout << PINK_B << "🦁 WrongCat" << RESET << GREEN_B << " was born !" \
+	std::cout << PINK_B << "🐾 AAnimal" << RESET << GREEN_B << " was born !" \
 	<< RESET << std::endl;
 	return ;
 }
 
 //	 =======    COPY CONSTRUCTOR     =======
 
-WrongCat::WrongCat(WrongCat const &src) : WrongAnimal() {
+AAnimal::AAnimal(AAnimal const &src) {
 
 	*this = src;
-	std::cout << GREEN_B << "🦁 An other " << RESET << PINK_B << "WrongCat" \
+	std::cout << GREEN_B << "🐾 An other " << RESET << PINK_B << "AAnimal" \
 	<< RESET << GREEN_B << " was born !" << RESET << std::endl;
 	return ;
 }
 
 //	 =======        DESTRUCTOR       =======
 
-WrongCat::~WrongCat() {
+AAnimal::~AAnimal() {
 
-	std::cout << PINK_B << "🌅 WrongCat" << RESET << RED_B << " lived a very good life..." \
+	std::cout << PINK_B << "🌅 AAnimal" << RESET << RED_B << " lived a very good life..." \
 	<< RESET << std::endl;
 	return ;
 }
 
 //	 =======  COPY ASSIGNEMENT OPER. =======
 
-WrongCat	&WrongCat::operator=(WrongCat const &rhs) {
+AAnimal	&AAnimal::operator=(AAnimal const &rhs) {
 
 	this->_type = rhs._type;
 	return (*this);
@@ -65,9 +64,14 @@ WrongCat	&WrongCat::operator=(WrongCat const &rhs) {
 //	|	MEMBERS FUNCTIONS		           |
 //	 ======================================
 
-void	WrongCat::makeSound() const {
+std::string const	AAnimal::getType() const {
 
-	std::cout << RED_B << "🦁 🔊 " << this->getType() << RESET << YELLOW_B << \
-	" said 'GROOOOOOOOARRR! I Just Can't Wait To Be King!'!!!" << RESET << std::endl;
+	return (_type);
+}
+
+void	AAnimal::makeSound() const {
+
+	std::cout << RED_B << "🐾 🔊 " << this->getType() << RESET << BLUE_B << \
+	" said 'I'M ALIIIIIVE BITCH'!!!" << RESET << std::endl;
 	return ;
 }
