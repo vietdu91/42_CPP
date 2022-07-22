@@ -6,7 +6,7 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/22 14:17:10 by emtran            #+#    #+#             */
-/*   Updated: 2022/07/22 15:51:15 by emtran           ###   ########.fr       */
+/*   Updated: 2022/07/22 17:11:21 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,7 @@ int	main(void)
 		std::cout << "\033[1;36m--------------------------------------------\e[0m" << std::endl;
 	}
 
+
 	std::cout << std::endl;
 	std::cout << "\033[1;32m==========      CONSTRUCTOR 2      ==========\e[0m" << std::endl << std::endl;
 
@@ -83,9 +84,16 @@ int	main(void)
 	// delete Batawaf;
 
 	// std::cout << std::endl;
+	std::cout << std::endl;
+	std::cout << "\033[1;33m==========    SURPRISEEEEEEEEEEE   ==========\e[0m" << std::endl << std::endl;
 
-	// Dog Bouboule;
-	// Dog Batawaf = Bouboule;
+	Dog Bouboule;
+	std::cout << "\033[1;33m--------------------------------------------\e[0m" << std::endl;
+	{
+	Dog Batawaf = Bouboule;
+	}
+	std::cout << "\033[1;33m--------------------------------------------\e[0m" << std::endl;
+
 
 	return (0);
 }
