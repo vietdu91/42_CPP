@@ -6,7 +6,7 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/21 15:21:13 by emtran            #+#    #+#             */
-/*   Updated: 2022/07/21 15:21:56 by emtran           ###   ########.fr       */
+/*   Updated: 2022/07/22 19:40:15 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ class WrongAnimal {
 		WrongAnimal	&operator=(WrongAnimal const &rhs);
 
 		std::string const		getType() const;
-		virtual void			makeSound() const;
+		void					makeSound() const;
 
 	protected :
 		std::string		_type;

@@ -6,7 +6,7 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/21 15:22:08 by emtran            #+#    #+#             */
-/*   Updated: 2022/07/21 15:22:50 by emtran           ###   ########.fr       */
+/*   Updated: 2022/07/22 19:40:24 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class WrongCat : public WrongAnimal {
 
 		WrongCat	&operator=(WrongCat const &rhs);
 
-		virtual void	makeSound() const;
+		void		makeSound() const;
 } ;
 
 #endif
