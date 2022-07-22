@@ -93,8 +93,11 @@ Voici quelques liens de documentation qui pourraient vous accompagner tout au lo
 * Exposition du probleme de diamant : https://en.wikipedia.org/wiki/Multiple_inheritance#The_diamond_problem
 * A quoi ca sert de mettre un virtual class : https://www.geeksforgeeks.org/virtual-base-class-in-c/
 
-# 💰   MODULE 03 - Polymorphisme par sous-typage, classes abstraites, interfaces
+# 😸   MODULE 04 - Polymorphisme par sous-typage, classes abstraites, interfaces
 
 * Ultra bon recap des notions d'heritage, de classes et du polymorphisme : https://www.labri.fr/perso/bourqui/downloads/cours/AP2/support-C%2B%2B-classes.pdf
+* Ca aussi c'est super cool : https://h-deb.clg.qc.ca/Sujets/Divers--cplusplus/Polymorphisme.html
 * Un constructeur peut-il etre virtual ? : https://www.tutorialspoint.com/virtual-constructor-in-cplusplus
 * Et du coup, un deconstructeur peut-il etre aussi virtual ? : https://www.geeksforgeeks.org/virtual-destructor/
+* Quand devrait-on marquer un destructeur comme étant virtuel ? : https://h-deb.clg.qc.ca/Sujets/TrucsScouts/Destructeurs-virtuels-quand.html
+* Pourquoi mon polymorphisme ne marche pas ? : https://sites.google.com/site/steveyegge2/when-polymorphism-fails
