@@ -6,7 +6,7 @@
 /*   By: Manu <Manu@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/23 22:22:24 by Manu              #+#    #+#             */
-/*   Updated: 2022/07/23 23:47:04 by Manu             ###   ########.fr       */
+/*   Updated: 2022/07/24 21:53:53 by Manu             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,15 @@
 class Bureaucrat {
 
 	public :
+		Bureaucrat ();
 		Bureaucrat(std::string const name, unsigned int grade);
 		Bureaucrat(Bureaucrat const &src);
 		~Bureaucrat();
 
 		Bureaucrat	&operator=(Bureaucrat const &rhs);
 
-		std::string const	getName();
-		unsigned int		getGrade();
+		std::string const	getName() const;
+		unsigned int		getGrade() const;
 
 		void	promotionCanape();
 		void	declassementSocial();
