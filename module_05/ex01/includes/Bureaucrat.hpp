@@ -6,7 +6,7 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/23 22:22:24 by Manu              #+#    #+#             */
-/*   Updated: 2022/07/25 16:52:29 by emtran           ###   ########.fr       */
+/*   Updated: 2022/07/25 13:50:11 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,6 @@ class Bureaucrat {
 		void	promotionCanape();
 		void	declassementSocial();
 
-		void	signForm();
-		
 		class GradeTooHighException : public std::exception {
 			public :
 				const char* what() const throw();
