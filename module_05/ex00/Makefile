@@ -99,7 +99,7 @@ $(NAME):	${OBJS} ${INCLUDES}
 			@printf "			                  $(RESET)$(ROUGE)  $(RESET)$(ROSE)    $(RESET)$(ROUGE)  $(RESET)\n"
 			@printf "			                    $(RESET)$(ROUGE)    $(RESET)\n"
 			@printf "\n\n$(SKY)████████████████  😊 😊 😊  PENSEE DU JOUR POUR TE FAIRE SOURIRE  😊 😊 😊  ████████████████$(RESET)"
-			@printf "\n\n$(BLUE_B)Hier est derrière, demain est mystère, et aujourd'hui est un cadeau, c'est pour cela qu'on l'appelle le présent. 🎍 \n\n$(RESET)"
+			@printf "\n\n$(BLUE_B)When morality comes up against profit, it is seldom that profit loses... 😐 \n\n$(RESET)"
 			@printf "$(YELLOW)============$(RESET)"
 			@printf "\e[38;5;227m============$(RESET)"
 			@printf "\e[38;5;228m============$(RESET)"

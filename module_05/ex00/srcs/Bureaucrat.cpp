@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Bureaucrat.cpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Manu <Manu@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/24 08:13:41 by Manu              #+#    #+#             */
-/*   Updated: 2022/07/24 23:24:04 by Manu             ###   ########.fr       */
+/*   Updated: 2022/07/25 16:16:12 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,10 @@
 
 //	 =======   DEFAULT CONSTRUCTOR   =======
 
-Bureaucrat::Bureaucrat() : _name("Fabieng"), _grade(10) {
+Bureaucrat::Bureaucrat() : _name("Fabieng"), _grade(100) {
 
+	std::cout << PINK_B << "💼 " << this->_name << RESET << GREEN_B << " is coming to the job market!" \
+	<< RESET << std::endl;
 	return ;
 }
 
@@ -27,13 +29,17 @@ Bureaucrat::Bureaucrat() : _name("Fabieng"), _grade(10) {
 
 Bureaucrat::Bureaucrat(Bureaucrat const &src) {
 
+	std::cout << PINK_B << "💼 An other " << this->_name << RESET << GREEN_B << " is coming to the job market!" \
+	<< RESET << std::endl;
 	*this = src;
 	return ;
 }
 //	 =======        DESTRUCTOR       =======
 
 Bureaucrat::~Bureaucrat() {
-	
+
+	std::cout << PINK_B << "💼 " << this->_name << RESET << GREEN_B << " is retiring!" \
+	<< RESET << std::endl;
 	return ;
 }
 
@@ -42,10 +48,9 @@ Bureaucrat::~Bureaucrat() {
 Bureaucrat	&Bureaucrat::operator=(Bureaucrat const &rhs) {
 
 	if (rhs._grade <= 0)
-		throw GradeTooHighException();	
+		throw GradeTooHighException();
 	else if (rhs._grade >= 150)
 		throw GradeTooLowException();
-	this->_name = rhs.getName();
 	this->_grade = rhs.getGrade();
 	return (*this);
 }
@@ -56,9 +61,11 @@ Bureaucrat	&Bureaucrat::operator=(Bureaucrat const &rhs) {
 Bureaucrat::Bureaucrat(std::string const name, unsigned int grade) : _name(name), _grade(grade) {
 
 	if (this->_grade <= 0)
-		throw GradeTooHighException();	
+		throw GradeTooHighException();
 	else if (this->_grade >= 150)
 		throw GradeTooLowException();
+	std::cout << PINK_B << "💼 " << this->_name << RESET << GREEN_B << " is coming to the job market!" \
+	<< RESET << std::endl;
 	return ;
 }
 
@@ -68,35 +75,51 @@ Bureaucrat::Bureaucrat(std::string const name, unsigned int grade) : _name(name)
 
 std::ostream	&operator<<(std::ostream &o, Bureaucrat const &rhs) {
 
-	o << rhs.getName() << ", bureaucrat grade " << rhs.getGrade() << std::endl;
+	o << RED_B << " 🖥️ " << rhs.getName() << RESET << BLUE_B << ", bureaucrat grade " << RESET \
+	<< PINK_B << rhs.getGrade() << RESET;
 	return (o);
 }
 //	 ======================================
 //	|	MEMBERS FUNCTIONS		           |
 //	 ======================================
 
+std::string const	Bureaucrat::getName() const {
+
+	return (this->_name);
+}
+
+unsigned int	Bureaucrat::getGrade() const {
+
+	return (this->_grade);
+}
+
+
 void	Bureaucrat::promotionCanape()
 {
-	if (this->_grade <= 0)
+	if (this->_grade - 1 <= 0)
 		throw GradeTooHighException();
 	this->_grade -= 1;
+	std::cout << RED_B << " 👅 " << this->_name << RESET << YELLOW_B << " sucked well the boss! Him/her grade now is : " \
+	<< RESET << PINK_B << this->_grade << RESET << std::endl;
 	return ;
 }
 
 void	Bureaucrat::declassementSocial()
 {
-	if (this->_grade >= 150)
+	if (this->_grade + 1 >= 151)
 		throw GradeTooLowException();
 	this->_grade += 1;
+	std::cout << RED_B << " 🙇 " << this->_name << RESET << RED_B << " has made a serious mistake that jeopardizes the cohesion of the company! Him/her grade now is : " \
+	<< RESET << PINK_B << this->_grade << RESET << std::endl;
 	return ;
 }
 
 const char	*Bureaucrat::GradeTooHighException::what() const throw() {
 
-	return ("Putain t'es trop gradé !");
+	return ("💰 You can't surpass the king of capitalism!");
 }
 
 const char	*Bureaucrat::GradeTooLowException::what() const throw() {
 
-	return ("Putain t'es trop peu gradé !");
-} 
+	return ("😈 We really want you to know that we want to keep you in the company!");
+}

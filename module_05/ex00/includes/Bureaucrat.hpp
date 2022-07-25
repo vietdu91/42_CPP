@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Bureaucrat.hpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Manu <Manu@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/23 22:22:24 by Manu              #+#    #+#             */
-/*   Updated: 2022/07/24 21:53:53 by Manu             ###   ########.fr       */
+/*   Updated: 2022/07/25 13:50:11 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 
 # include <iostream>
 # include <exception>
+
+# include "colors.hpp"
 
 class Bureaucrat {
 
@@ -45,7 +47,7 @@ class Bureaucrat {
 	private :
 		std::string const	_name;
 		unsigned int		_grade;
-	
+
 };
 
 std::ostream	&operator<<(std::ostream &o, Bureaucrat const &rhs);
