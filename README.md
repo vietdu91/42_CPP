@@ -16,6 +16,9 @@ Voici quelques liens de documentation qui pourraient vous accompagner tout au lo
 * LE FAMEUX LIEU DE DOCUMENTATION DE REFERENCE : https://en.cppreference.com/w/cpp (existe aussi en version francaise, mais il y a beaucoup moins d'articles...)
 * Les videos de l'intra de 42 qui initient bien a la decouverte de ce merveilleux langage 📼 : https://elearning.intra.42.fr/tags/38/notions
 * Pas de norme sur les modules ! Mais il est recommandable tout de meme de bien coder efficacement et clairement. Les conseils de l'ANSSI (Agence Nationale de la Securite des Systemes d'Information, ce n'est pas rien) 🚨 vous y aident : https://www.ssi.gouv.fr/uploads/2020/05/anssi-guide-regles_de_programmation_pour_le_developpement_securise_de_logiciels_en_langage_c.pdf 
+* Un beau site simpliste qui permet de naviguer dans l'ensemble des bibliotheques de C++ : https://devdocs.io/cpp/
+* Un FAQ trop bien complet : http://www.parashift.com/c++-faq-lite/
+
 # 🧑‍🏫   MODULE 00 - Namescapes, classes, fonctions membres, stdio, streams, listes d'initialisation, static, const, et autres bases
 
 ![Screenshot](module_000_img.png)
