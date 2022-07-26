@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jul 25 16:21:20 2022
+# Make data base, printed on Tue Jul 26 17:04:16 2022
 
 # Variables
 
@@ -41,13 +41,11 @@ CURDIR := /mnt/nfs/homes/emtran/Desktop/42_cpp
 # makefile
 SHELL = /bin/sh
 # environment
-GDM_LANG = en
-# environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
 _ = /usr/share/code/code
 # environment
-JOURNAL_STREAM = 9:434626
+JOURNAL_STREAM = 9:135985
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile
@@ -67,15 +65,15 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/40120/bus
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-MANAGERPID = 139129
+MANAGERPID = 27421
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/40120/vscode-ipc-50535499-518f-4042-aff3-9d1ccf372b8e.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/40120/vscode-ipc-20ebc765-2500-4b8a-90b0-967ac2bc88b7.sock
 # environment
 VSCODE_CWD = /mnt/nfs/homes/emtran
 # environment
-XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session2
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session1
 # environment
-KRB5CCNAME = FILE:/tmp/krb5cc_40120_irFgQC
+KRB5CCNAME = FILE:/tmp/krb5cc_40120_9GZH7e
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
@@ -85,7 +83,7 @@ GPG_AGENT_INFO = /run/user/40120/gnupg/S.gpg-agent:0:1
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
-SESSION_MANAGER = local/e1r4p10.clusters.42paris.fr:@/tmp/.ICE-unix/139653,unix/e1r4p10.clusters.42paris.fr:/tmp/.ICE-unix/139653
+SESSION_MANAGER = local/e1r1p11.clusters.42paris.fr:@/tmp/.ICE-unix/27937,unix/e1r1p11.clusters.42paris.fr:/tmp/.ICE-unix/27937
 # environment
 XDG_RUNTIME_DIR = /run/user/40120
 # environment
@@ -95,7 +93,7 @@ VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 631a4606667349828143e36bf2d38394
+INVOCATION_ID = c6643d6c80f3439e815e07dd5f11aa27
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -107,7 +105,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/40120/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 142367
+GIO_LAUNCHED_DESKTOP_FILE_PID = 28582
 # automatic
 %F = $(notdir $%)
 # environment
@@ -119,7 +117,7 @@ PWD = /mnt/nfs/homes/emtran/Desktop/42_cpp
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 139616
+SSH_AGENT_PID = 27899
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -177,8 +175,6 @@ OLDPWD = /mnt/nfs/homes/emtran
 # automatic
 *F = $(notdir $*)
 # environment
-LANGUAGE = en
-# environment
 XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
 # environment
 VSCODE_IPC_HOOK = /run/user/40120/vscode-014d0f24-1.68.1-main.sock
@@ -225,9 +221,9 @@ LANG = C
 # environment
 DOCKER_HOST = unix:///run/user/40120/docker.sock
 # environment
-VSCODE_PID = 142367
+VSCODE_PID = 28582
 # variable set hash-table stats:
-# Load=107/1024=10%, Rehash=0, Collisions=7/129=5%
+# Load=105/1024=10%, Rehash=0, Collisions=7/127=6%
 
 # Pattern-specific Variable Values
 
@@ -287,13 +283,13 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 24 / storage = 265 B / avg = 11 B
  
+# strcache buffers: 1 (0) / strings = 24 / storage = 265 B / avg = 11 B
 # current buf: size = 8162 B / used = 265 B / count = 24 / avg = 11 B
 
 # strcache performance: lookups = 27 / hit rate = 11%
 # hash-table stats:
 # Load=24/8192=0%, Rehash=0, Collisions=2/27=7%
-# Finished Make data base on Mon Jul 25 16:21:20 2022
+# Finished Make data base on Tue Jul 26 17:04:16 2022
 
  
