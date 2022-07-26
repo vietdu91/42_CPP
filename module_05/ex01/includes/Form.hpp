@@ -6,7 +6,7 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 16:42:29 by emtran            #+#    #+#             */
-/*   Updated: 2022/07/25 16:53:50 by emtran           ###   ########.fr       */
+/*   Updated: 2022/07/26 19:58:13 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 # include <iostream>
 # include "Bureaucrat.hpp"
 
+class Bureaucrat;
+
 class Form {
 
 	public :
@@ -24,14 +26,15 @@ class Form {
 		Form(Form const &src);
 		~Form();
 
+
 		Form	&operator=(Form const &rhs);
 
 		std::string const	getName() const;
 		bool				getStatusForm() const;
-		unsigned int const	getGradeSign() const;
-		unsigned int const	getGradeExec() const;
+		unsigned int 		getGradeSign() const;
+		unsigned int 		getGradeExec() const;
 
-		void	beSigned();
+		void	beSigned(Bureaucrat const &employe);
 
 		class GradeTooHighException : public std::exception {
 			public :
@@ -46,8 +49,8 @@ class Form {
 	private :
 		std::string const	_name;
 		bool				_formSigned;
-		unsigned int const	_gradeSign;
-		unsigned int const	_gradeExec;
+		unsigned int 		_gradeSign;
+		unsigned int 		_gradeExec;
 };
 
 std::ostream	&operator<<(std::ostream &o, Form const &rhs);

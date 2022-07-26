@@ -6,7 +6,7 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 16:53:06 by emtran            #+#    #+#             */
-/*   Updated: 2022/07/25 17:32:43 by emtran           ###   ########.fr       */
+/*   Updated: 2022/07/26 19:51:28 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,3 +86,41 @@ std::ostream	&operator<<(std::ostream &o, Form const &rhs) {
 //	 ======================================
 //	|	MEMBERS FUNCTIONS		           |
 //	 ======================================
+
+std::string const	Form::getName() const {
+
+	return (this->_name);
+}
+
+bool	Form::getStatusForm() const {
+
+	return (this->_formSigned);
+}
+
+unsigned int	Form::getGradeSign() const {
+
+	return (this->_gradeSign);
+}
+
+unsigned int	Form::getGradeExec() const {
+
+	return (this->_gradeExec);
+}
+
+void	Form::beSigned(Bureaucrat const &employe) {
+
+	if (employe.getGrade() > this->_gradeSign)
+		throw GradeTooLowException();
+	this->_formSigned = true;
+	return ;
+}
+
+const char	*Form::GradeTooHighException::what() const throw() {
+
+	return ("💰 You can't surpass the king of capitalism!");
+}
+
+const char	*Form::GradeTooLowException::what() const throw() {
+
+	return ("😈 We really want you to know that we want to keep you in the company!");
+}

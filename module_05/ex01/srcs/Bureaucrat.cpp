@@ -6,7 +6,7 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/24 08:13:41 by Manu              #+#    #+#             */
-/*   Updated: 2022/07/25 16:16:12 by emtran           ###   ########.fr       */
+/*   Updated: 2022/07/26 19:56:33 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,7 @@ Bureaucrat	&Bureaucrat::operator=(Bureaucrat const &rhs) {
 	this->_grade = rhs.getGrade();
 	return (*this);
 }
+
 //	 ======================================
 //	|	CONSTRUCTOR OVERLOAD	           |
 //	 ======================================
@@ -79,6 +80,7 @@ std::ostream	&operator<<(std::ostream &o, Bureaucrat const &rhs) {
 	<< PINK_B << rhs.getGrade() << RESET;
 	return (o);
 }
+
 //	 ======================================
 //	|	MEMBERS FUNCTIONS		           |
 //	 ======================================
@@ -92,7 +94,6 @@ unsigned int	Bureaucrat::getGrade() const {
 
 	return (this->_grade);
 }
-
 
 void	Bureaucrat::promotionCanape()
 {
@@ -112,6 +113,22 @@ void	Bureaucrat::declassementSocial()
 	std::cout << RED_B << " 🙇 " << this->_name << RESET << RED_B << " has made a serious mistake that jeopardizes the cohesion of the company! Him/her grade now is : " \
 	<< RESET << PINK_B << this->_grade << RESET << std::endl;
 	return ;
+}
+
+void	Bureaucrat::signForm(Form &form) const {
+
+	try
+	{
+		form.beSigned(*this);
+		std::cout << this->getName() << " signed " << form.getName() << std::endl;
+	}
+	catch(const std::exception& e)
+	{
+		std::cerr << this->getName() << " couldn't sign ";
+		std::cerr << form.getName() << " because ";
+		std::cerr << e.what() << std::endl;
+	}
+
 }
 
 const char	*Bureaucrat::GradeTooHighException::what() const throw() {
