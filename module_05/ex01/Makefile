@@ -2,11 +2,11 @@
 NAME		=	IN_ROWS_LARVAE
 
 	# Compilator #
-ifeq ($(shell uname -s),Darwin)
-	COMPILER	=	c++-11
-else
+#ifeq ($(shell uname -s),Darwin)
+#	COMPILER	=	c++-11
+#else
 	COMPILER	=	c++
-endif
+#endif
 
 	# Variables #
 SRCS		=		main.cpp \
