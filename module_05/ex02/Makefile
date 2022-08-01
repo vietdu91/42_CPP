@@ -1,5 +1,5 @@
 	# Library Name #
-NAME		=	IN_ROWS_LARVAE
+NAME		=	28B_FORM
 
 	# Compilator #
 COMPILER	=	c++
@@ -7,10 +7,16 @@ COMPILER	=	c++
 	# Variables #
 SRCS		=		main.cpp \
 					Bureaucrat.cpp \
-					Form.cpp \
+					PresidentialPardonForm.cpp \
+					RobotomyRequestForm.cpp \
+					ShrubberyCreationForm.cpp \
+					AForm.cpp \
 
 INCLUDES	=		includes/Bureaucrat.hpp \
-					includes/Form.hpp \
+					includes/PresidentialPardonForm.hpp \
+					includes/RobotomyRequestForm.hpp \
+					includes/ShrubberyCreationForm.hpp \
+					includes/AForm.hpp \
 
 	# Colors Foreground #
 DEFAULT		=	\033[0;39m

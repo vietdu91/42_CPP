@@ -2,11 +2,7 @@
 NAME		=	MUM_I_WANT_TO_BE_BUREAUCRAT
 
 	# Compilator #
-ifeq ($(shell uname -s),Darwin)
-	COMPILER	=	c++-11
-else
-	COMPILER	=	c++
-endif
+COMPILER	=	c++
 
 	# Variables #
 SRCS		=		main.cpp \
