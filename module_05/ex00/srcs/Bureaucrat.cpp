@@ -6,7 +6,7 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/24 08:13:41 by Manu              #+#    #+#             */
-/*   Updated: 2022/07/25 16:16:12 by emtran           ###   ########.fr       */
+/*   Updated: 2022/08/08 13:41:04 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,7 @@ Bureaucrat::Bureaucrat(std::string const name, unsigned int grade) : _name(name)
 
 std::ostream	&operator<<(std::ostream &o, Bureaucrat const &rhs) {
 
-	o << RED_B << " 🖥️ " << rhs.getName() << RESET << BLUE_B << ", bureaucrat grade " << RESET \
+	o << RED_B << " 🖥️  " << rhs.getName() << RESET << BLUE_B << ", bureaucrat grade " << RESET \
 	<< PINK_B << rhs.getGrade() << RESET;
 	return (o);
 }
@@ -99,7 +99,7 @@ void	Bureaucrat::promotionCanape()
 	if (this->_grade - 1 <= 0)
 		throw GradeTooHighException();
 	this->_grade -= 1;
-	std::cout << RED_B << " 👅 " << this->_name << RESET << YELLOW_B << " sucked well the boss! Him/her grade now is : " \
+	std::cout << RED_B << " 👅 " << this->_name << RESET << YELLOW_B << " sucked well the boss! His/her grade now is : " \
 	<< RESET << PINK_B << this->_grade << RESET << std::endl;
 	return ;
 }
@@ -109,17 +109,17 @@ void	Bureaucrat::declassementSocial()
 	if (this->_grade + 1 >= 151)
 		throw GradeTooLowException();
 	this->_grade += 1;
-	std::cout << RED_B << " 🙇 " << this->_name << RESET << RED_B << " has made a serious mistake that jeopardizes the cohesion of the company! Him/her grade now is : " \
+	std::cout << RED_B << " 🙇 " << this->_name << RESET << RED_B << " has made a serious mistake that jeopardizes the cohesion of the company! His/her grade now is : " \
 	<< RESET << PINK_B << this->_grade << RESET << std::endl;
 	return ;
 }
 
 const char	*Bureaucrat::GradeTooHighException::what() const throw() {
 
-	return ("💰 You can't surpass the king of capitalism!");
+	return ("\033[0;36m💰 You can't surpass the king of capitalism!\e[0m");
 }
 
 const char	*Bureaucrat::GradeTooLowException::what() const throw() {
 
-	return ("😈 We really want you to know that we want to keep you in the company!");
+	return ("\033[0;35m😈 We really want you to know that we want to keep you in the company!\e[0m");
 }

@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Form.cpp                                           :+:      :+:    :+:   */
+/*   AForm.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Form.hpp"
+#include "AForm.hpp"
 
 //	 ======================================
 //	|	CANONICAL FORM				       |
@@ -18,7 +18,7 @@
 
 //	 =======   DEFAULT CONSTRUCTOR   =======
 
-Form::Form() : _name("Certif. of author. to go to toilet during legal working hours"), \
+AForm::AForm() : _name("Certif. of author. to go to toilet during legal working hours"), \
 _formSigned(false), _gradeSign(120), _gradeExec(120) {
 
 	std::cout << GREEN_B << "📝 An application for " << RESET << YELLOW_B << this->_name \
@@ -28,7 +28,7 @@ _formSigned(false), _gradeSign(120), _gradeExec(120) {
 
 //	 =======    COPY CONSTRUCTOR     =======
 
-Form::Form(Form const &src) {
+AForm::AForm(AForm const &src) {
 
 	std::cout << GREEN_B << "📝 An other application for " << RESET << YELLOW_B << this->_name \
 	<< RESET << GREEN_B << " has been made!" << RESET << std::endl;
@@ -37,7 +37,7 @@ Form::Form(Form const &src) {
 }
 //	 =======        DESTRUCTOR       =======
 
-Form::~Form() {
+AForm::~AForm() {
 
 	std::cout << RED_B << "🗑️  The " << RESET << YELLOW_B << this->_name \
 	<< RESET << GREEN_B << " has been torn up!" << RESET << std::endl;
@@ -45,7 +45,7 @@ Form::~Form() {
 }
 //	 =======  COPY ASSIGNEMENT OPER. =======
 
-Form	&Form::operator=(Form const &rhs) {
+AForm	&AForm::operator=(AForm const &rhs) {
 
 	if (rhs._gradeSign <= 0 || rhs._gradeExec <= 0)
 		throw GradeTooHighException();
@@ -59,13 +59,14 @@ Form	&Form::operator=(Form const &rhs) {
 //	|	CONSTRUCTOR OVERLOAD	           |
 //	 ======================================
 
-Form::Form (std::string const name, unsigned int const gradeSign, unsigned int const gradeExec) : \
+AForm::AForm (std::string const name, unsigned int const gradeSign, unsigned int const gradeExec) : \
 _name(name), _gradeSign(gradeSign), _gradeExec(gradeExec) {
 
 	if (this->_gradeSign <= 0 || this->_gradeExec <= 0)
 		throw GradeTooHighException();
 	else if (this->_gradeSign >= 150 || this->_gradeExec >= 150)
 		throw GradeTooLowException();
+	this->_formSigned = false;
 	std::cout << GREEN_B << "📝 An application for " << RESET << YELLOW_B << this->_name \
 	<< RESET << GREEN_B << " has been made!" << RESET << std::endl;
 	return ;
@@ -74,7 +75,7 @@ _name(name), _gradeSign(gradeSign), _gradeExec(gradeExec) {
 //	|	OPERATOR OVERLOAD	               |
 //	 ======================================
 
-std::ostream	&operator<<(std::ostream &o, Form const &rhs) {
+std::ostream	&operator<<(std::ostream &o, AForm const &rhs) {
 
 	o << BLUE_B << " 📂 THE CONTENT OF " << RESET << RED_B << rhs.getName() << RESET << std::endl;
 	o << SKY_B << "			IS SIGNED ? : " << RESET << RED_B << rhs.getStatusForm() << RESET << std::endl;
@@ -87,27 +88,27 @@ std::ostream	&operator<<(std::ostream &o, Form const &rhs) {
 //	|	MEMBERS FUNCTIONS		           |
 //	 ======================================
 
-std::string const	Form::getName() const {
+std::string const	AForm::getName() const {
 
 	return (this->_name);
 }
 
-bool	Form::getStatusForm() const {
+bool	AForm::getStatusForm() const {
 
 	return (this->_formSigned);
 }
 
-unsigned int	Form::getGradeSign() const {
+unsigned int	AForm::getGradeSign() const {
 
 	return (this->_gradeSign);
 }
 
-unsigned int	Form::getGradeExec() const {
+unsigned int	AForm::getGradeExec() const {
 
 	return (this->_gradeExec);
 }
 
-void	Form::beSigned(Bureaucrat const &employe) {
+void	AForm::beSigned(Bureaucrat const &employe) {
 
 	if (employe.getGrade() > this->_gradeSign)
 		throw GradeTooLowException();
@@ -115,12 +116,27 @@ void	Form::beSigned(Bureaucrat const &employe) {
 	return ;
 }
 
-const char	*Form::GradeTooHighException::what() const throw() {
+void	AForm::beExecuted(Bureaucrat const &executor) {
+
+	if (this->_formSigned == false)
+		throw AForm::FormNotSignedException();
+	if (executor.getGrade() > this->_gradeExec)
+		throw AForm::GradeTooLowException();
+	this->execute();
+	return ;
+}
+
+const char	*AForm::GradeTooHighException::what() const throw() {
 
 	return ("\033[0;36m💰 You can't surpass the king of capitalism!\e[0m");
 }
 
-const char	*Form::GradeTooLowException::what() const throw() {
+const char	*AForm::GradeTooLowException::what() const throw() {
 
 	return ("\033[0;35m😈 We really want you to know that we want to keep you in the company!\e[0m");
+}
+
+const char	*AForm::FormNotSignedException::what() const throw() {
+
+	return ("🪧 What? A Form not signed? Go to work you lazy bastard 🏃!");
 }

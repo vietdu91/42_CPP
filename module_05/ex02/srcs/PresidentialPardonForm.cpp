@@ -6,7 +6,7 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/01 11:53:47 by emtran            #+#    #+#             */
-/*   Updated: 2022/08/01 11:59:03 by emtran           ###   ########.fr       */
+/*   Updated: 2022/08/08 16:27:27 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 //	 =======   DEFAULT CONSTRUCTOR   =======
 
-PresidentialPardonForm::PresidentialPardonForm(std::string target) : AForm("Presidential", 25, 5), _target(target) {
+PresidentialPardonForm::PresidentialPardonForm(std::string target) : AForm(target, 25, 5), _target(target) {
 
 	return ;
 }

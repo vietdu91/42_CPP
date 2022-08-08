@@ -6,7 +6,7 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 16:53:06 by emtran            #+#    #+#             */
-/*   Updated: 2022/08/01 19:19:27 by emtran           ###   ########.fr       */
+/*   Updated: 2022/08/08 16:24:31 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ AForm::AForm(AForm const &src) {
 
 AForm::~AForm() {
 
-	std::cout << RED_B << "🗑️ The " << RESET << YELLOW_B << this->_name \
+	std::cout << RED_B << "🗑️  The " << RESET << YELLOW_B << this->_name \
 	<< RESET << GREEN_B << " has been torn up!" << RESET << std::endl;
 	return ;
 }
@@ -66,6 +66,7 @@ _name(name), _gradeSign(gradeSign), _gradeExec(gradeExec) {
 		throw GradeTooHighException();
 	else if (this->_gradeSign >= 150 || this->_gradeExec >= 150)
 		throw GradeTooLowException();
+	this->_formSigned = false;
 	std::cout << GREEN_B << "📝 An application for " << RESET << YELLOW_B << this->_name \
 	<< RESET << GREEN_B << " has been made!" << RESET << std::endl;
 	return ;
@@ -127,15 +128,15 @@ void	AForm::beExecuted(Bureaucrat const &executor) {
 
 const char	*AForm::GradeTooHighException::what() const throw() {
 
-	return ("💰 You can't surpass the king of capitalism!");
+	return ("\033[0;36m💰 You can't surpass the king of capitalism!\e[0m");
 }
 
 const char	*AForm::GradeTooLowException::what() const throw() {
 
-	return ("😈 We really want you to know that we want to keep you in the company!");
+	return ("\033[0;35m😈 We really want you to know that we want to keep you in the company!\e[0m");
 }
 
 const char	*AForm::FormNotSignedException::what() const throw() {
 
-	return ("🪧 What? A Form not signed? Go to work you lazy bastard 🏃!");
+	return ("\033[0;34m🪧  What? A Form not signed? Go to work you lazy bastard 🏃!\e[0m");
 }

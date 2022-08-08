@@ -1,22 +1,24 @@
 	# Library Name #
-NAME		=	28B_FORM
+NAME		=	I_WANT_COFFEE
 
 	# Compilator #
 COMPILER	=	c++
 
 	# Variables #
 SRCS		=		main.cpp \
+					AForm.cpp \
 					Bureaucrat.cpp \
+					Intern.cpp \
 					PresidentialPardonForm.cpp \
 					RobotomyRequestForm.cpp \
 					ShrubberyCreationForm.cpp \
-					AForm.cpp \
 
 INCLUDES	=		includes/Bureaucrat.hpp \
 					includes/PresidentialPardonForm.hpp \
 					includes/RobotomyRequestForm.hpp \
 					includes/ShrubberyCreationForm.hpp \
 					includes/AForm.hpp \
+					includes/Intern.hpp \
 
 	# Colors Foreground #
 DEFAULT		=	\033[0;39m
@@ -78,20 +80,32 @@ $(NAME):	${OBJS} ${INCLUDES}
 			${COMPILER} ${FLAGS} -I includes ${OBJS} -o $(NAME)
 			@printf "\n$(GREEN)████████████████  ✨ ✨ ✨  C'EST MERVEILLEUSEMENT BIEN COMPILE  ✨ ✨ ✨  ████████████████$(RESET)"
 			@printf	"	\n\n\n"
-			@printf "                    $(NOIR)                        $(RESET)\n"
-			@printf "                $(NOIR)    $(RESET)                        $(NOIR)    $(RESET)\n"
-			@printf "            $(NOIR)    $(RESET)                                $(NOIR)    $(RESET)\n"
-			@printf "        $(NOIR)    $(RESET)          $(NOIR)                    $(RESET)          $(NOIR)    $(RESET)\n"
-			@printf "      $(NOIR)  $(RESET)          $(NOIR)                              $(RESET)        $(NOIR)  $(RESET)\n"
-			@printf "  $(NOIR)    $(RESET)        $(NOIR)        $(RESET)$(VERT)                    $(RESET)$(NOIR)        $(RESET)        $(NOIR)    $(RESET)\n"
-			@printf "$(NOIR)  $(RESET)        $(NOIR)        $(RESET)$(VERT)            $(RESET)$(NOIR)    $(RESET)$(BLANC)  $(RESET)$(VERT)          $(RESET)$(NOIR)        $(RESET)        $(NOIR)  $(RESET)\n"
-			@printf "        $(NOIR)      $(RESET)$(BLANC)      $(RESET)$(VERT)        $(RESET)$(NOIR)      $(RESET)$(BLANC)    $(RESET)$(VERT)        $(RESET)$(BLANC)    $(RESET)$(NOIR)          $(RESET)\n"
-			@printf "    $(NOIR)      $(RESET)$(BLANC)  $(RESET)$(GRIS)  $(RESET)$(BLANC)      $(RESET)$(VERT)        $(RESET)$(NOIR)          $(RESET)$(VERT)        $(RESET)$(BLANC)        $(RESET)$(NOIR)        $(RESET)\n"
-			@printf "$(NOIR)        $(RESET)$(GRIS)    $(RESET)$(BLANC)        $(RESET)$(VERT)          $(RESET)$(NOIR)      $(RESET)$(VERT)          $(RESET)$(BLANC)            $(RESET)$(NOIR)      $(RESET)\n"
-			@printf ""
-
+			@printf "			    $(NOIR)      $(RESET)                        $(NOIR)      $(RESET)\n"
+			@printf "			  $(NOIR)          $(RESET)  $(NOIR)                $(RESET)  $(NOIR)          $(RESET)\n"
+			@printf "			$(NOIR)              $(RESET)$(BLANC)                $(RESET)$(NOIR)              $(RESET)\n"
+			@printf "			$(NOIR)        $(RESET)$(BLANC)                            $(RESET)$(NOIR)        $(RESET)\n"
+			@printf "			$(NOIR)      $(RESET)$(BLANC)                                $(RESET)$(NOIR)      $(RESET)\n"
+			@printf "			  $(NOIR)  $(RESET)$(BLANC)                                    $(NOIR)  $(RESET)\n"
+			@printf "			  $(NOIR)  $(RESET)$(BLANC)                                    $(NOIR)  $(RESET)\n"
+			@printf "			$(NOIR)  $(RESET)$(BLANC)        $(RESET)$(NOIR)      $(RESET)$(BLANC)            $(RESET)$(NOIR)      $(RESET)$(BLANC)        $(RESET)$(NOIR)  $(RESET)\n"
+			@printf "			$(NOIR)  $(RESET)$(BLANC)      $(RESET)$(NOIR)          $(RESET)$(BLANC)        $(RESET)$(NOIR)          $(RESET)$(BLANC)      $(RESET)$(NOIR)  $(RESET)\n"
+			@printf "			$(NOIR)  $(RESET)$(BLANC)    $(RESET)$(NOIR)        $(RESET)$(BLANC)  $(RESET)$(NOIR)  $(RESET)$(BLANC)        $(RESET)$(NOIR)  $(RESET)$(BLANC)  $(RESET)$(NOIR)        $(RESET)$(BLANC)    $(RESET)$(NOIR)  $(RESET)\n"
+			@printf "			$(NOIR)  $(RESET)$(BLANC)    $(RESET)$(NOIR)        $(RESET)$(BLANC)  $(RESET)$(NOIR)  $(RESET)$(BLANC)        $(RESET)$(NOIR)  $(RESET)$(BLANC)  $(RESET)$(NOIR)        $(RESET)$(BLANC)    $(RESET)$(NOIR)  $(RESET)\n"
+			@printf "			$(NOIR)  $(RESET)$(BLANC)    $(RESET)$(NOIR)          $(RESET)$(BLANC)        $(RESET)$(BLANC)    $(RESET)$(NOIR)          $(RESET)$(BLANC)    $(RESET)$(NOIR)  $(RESET)\n"
+			@printf "			$(NOIR)  $(RESET)$(BLANC)      $(RESET)$(NOIR)      $(RESET)$(BLANC)      $(RESET)$(NOIR)    $(RESET)$(BLANC)      $(RESET)$(NOIR)      $(RESET)$(BLANC)      $(RESET)$(NOIR)  $(RESET)\n"
+			@printf "			  $(NOIR)  $(RESET)$(BLANC)                $(RESET)$(NOIR)    $(RESET)$(BLANC)                $(RESET)$(NOIR)  $(RESET)\n"
+			@printf "			  $(NOIR)        $(RESET)$(BLANC)  $(RESET)$(ROUGE)      $(RESET)$(BLANC)        $(RESET)$(ROUGE)      $(RESET)$(BLANC)  $(RESET)$(NOIR)        $(RESET)\n"
+			@printf "			$(NOIR)            $(RESET)$(ROSE)      $(RESET)$(ROUGE)  $(RESET)$(BLANC)    $(RESET)$(ROUGE)  $(RESET)$(ROSE)      $(RESET)$(NOIR)            $(RESET)\n"
+			@printf "			$(NOIR)              $(RESET)$(ROSE)      $(RESET)$(ROUGE)    $(RESET)$(ROSE)      $(RESET)$(NOIR)              $(RESET)\n"
+			@printf "			$(NOIR)              $(RESET)$(ROSE)                $(RESET)$(NOIR)              $(RESET)\n"
+			@printf "			$(NOIR)              $(RESET)$(ROSE)                $(RESET)$(NOIR)              $(RESET)\n"
+			@printf "			  $(NOIR)            $(RESET)$(ROSE)                $(RESET)$(NOIR)            $(RESET)\n"
+			@printf "			    $(NOIR)        $(RESET)  $(ROUGE)  $(RESET)$(ROSE)            $(RESET)$(ROUGE)  $(RESET)  $(NOIR)        $(RESET)\n"
+			@printf "			                $(RESET)$(ROUGE)  $(RESET)$(ROSE)        $(RESET)$(ROUGE)  $(RESET)\n"
+			@printf "			                  $(RESET)$(ROUGE)  $(RESET)$(ROSE)    $(RESET)$(ROUGE)  $(RESET)\n"
+			@printf "			                    $(RESET)$(ROUGE)    $(RESET)\n"
 			@printf "\n\n$(SKY)████████████████  😊 😊 😊  PENSEE DU JOUR POUR TE FAIRE SOURIRE  😊 😊 😊  ████████████████$(RESET)"
-			@printf "\n\n$(BLUE_B) Just get ready fi work, work, work, work, work, wor! He said me haffi work, work, work, work, work, work 🏃\n\n$(RESET)"
+			@printf "\n\n$(BLUE_B)I choose a lazy person to do a hard job, because a lazy person will find an easy way to do it. 😴 \n\n$(RESET)"
 			@printf "$(YELLOW)============$(RESET)"
 			@printf "\e[38;5;227m============$(RESET)"
 			@printf "\e[38;5;228m============$(RESET)"

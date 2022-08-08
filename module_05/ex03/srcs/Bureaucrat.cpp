@@ -115,7 +115,7 @@ void	Bureaucrat::declassementSocial()
 	return ;
 }
 
-void	Bureaucrat::signForm(Form &form) const {
+void	Bureaucrat::signForm(AForm &form) const {
 
 	try
 	{
@@ -128,7 +128,24 @@ void	Bureaucrat::signForm(Form &form) const {
 		std::cerr << YELLOW_B << form.getName() << RESET << " because ";
 		std::cerr << e.what() << std::endl;
 	}
+	return ;
 
+}
+
+void	Bureaucrat::execForm(AForm &form) const {
+
+	try
+	{
+		form.beExecuted(*this);
+		std::cout << this->getName() << " executed " << form.getName() << std::endl;
+	}
+	catch (std::exception & e)
+	{
+		std::cerr << this->getName() << " couldn't execute ";
+		std::cerr << YELLOW_B << form.getName() << RESET << " because ";
+		std::cerr << e.what() << std::endl;
+	}
+	return ;
 }
 
 const char	*Bureaucrat::GradeTooHighException::what() const throw() {

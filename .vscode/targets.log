@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Aug  1 19:16:03 2022
+# Make data base, printed on Mon Aug  8 16:16:13 2022
 
 # Variables
 
@@ -43,7 +45,7 @@ VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupp
 # environment
 _ = /usr/share/code/code
 # environment
-JOURNAL_STREAM = 9:56358
+JOURNAL_STREAM = 9:1127907
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile
@@ -63,15 +65,15 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/40120/bus
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-MANAGERPID = 3993
+MANAGERPID = 156293
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/40120/vscode-ipc-38b8a634-8d89-40d3-af08-f721bb0b5e35.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/40120/vscode-ipc-ee243e56-c606-4f4d-a583-885cb71b1910.sock
 # environment
 VSCODE_CWD = /mnt/nfs/homes/emtran
 # environment
-XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session0
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session2
 # environment
-KRB5CCNAME = FILE:/tmp/krb5cc_40120_b4a3NR
+KRB5CCNAME = FILE:/tmp/krb5cc_40120_zuYiB4
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
@@ -81,7 +83,7 @@ GPG_AGENT_INFO = /run/user/40120/gnupg/S.gpg-agent:0:1
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
-SESSION_MANAGER = local/e1r2p17.clusters.42paris.fr:@/tmp/.ICE-unix/4520,unix/e1r2p17.clusters.42paris.fr:/tmp/.ICE-unix/4520
+SESSION_MANAGER = local/e1r9p4.clusters.42paris.fr:@/tmp/.ICE-unix/156698,unix/e1r9p4.clusters.42paris.fr:/tmp/.ICE-unix/156698
 # environment
 XDG_RUNTIME_DIR = /run/user/40120
 # environment
@@ -91,7 +93,7 @@ VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = dba3a6007f694871be8dd36b6e9013dc
+INVOCATION_ID = e438b34de9664480a7d49777c0134dda
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -103,7 +105,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/40120/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 10047
+GIO_LAUNCHED_DESKTOP_FILE_PID = 158225
 # automatic
 %F = $(notdir $%)
 # environment
@@ -115,7 +117,7 @@ PWD = /mnt/nfs/homes/emtran/Desktop/42_cpp
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 4483
+SSH_AGENT_PID = 156653
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -129,7 +131,7 @@ VSCODE_CODE_CACHE_PATH = /mnt/nfs/homes/emtran/.config/Code/CachedData/30d9c6cd9
 # environment
 LOGNAME = emtran
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 ZSH = /mnt/nfs/homes/emtran/.oh-my-zsh
 # environment
@@ -219,7 +221,7 @@ LANG = C
 # environment
 DOCKER_HOST = unix:///run/user/40120/docker.sock
 # environment
-VSCODE_PID = 10047
+VSCODE_PID = 158225
 # variable set hash-table stats:
 # Load=105/1024=10%, Rehash=0, Collisions=7/127=6%
 
@@ -229,7 +231,7 @@ VSCODE_PID = 10047
 
 # Directories
 
-# . (device 58, inode 235837033): 17 files, no impossibilities.
+# . (device 59, inode 235837033): 17 files, no impossibilities.
 
 # 17 files, no impossibilities in 1 directories.
 
@@ -282,14 +284,12 @@ GNUmakefile:
 # No general ('VPATH' variable) search path.
 
 # strcache buffers: 1 (0) / strings = 25 / storage = 283 B / avg = 11 B
+ 
 # current buf: size = 8162 B / used = 283 B / count = 25 / avg = 11 B
 
 # strcache performance: lookups = 28 / hit rate = 10%
 # hash-table stats:
- 
-make: *** No rule to make target 'all'.  Stop.
-
 # Load=25/8192=0%, Rehash=0, Collisions=2/28=7%
-# Finished Make data base on Mon Aug  1 19:16:03 2022
+# Finished Make data base on Mon Aug  8 16:16:13 2022
 
  
