@@ -119,3 +119,8 @@ Voici quelques liens de documentation qui pourraient vous accompagner tout au lo
 * Suivez cette page de A a Z et vous comprendrez tout sur les exceptions : https://h-deb.clg.qc.ca/Sujets/Divers--cplusplus/CPP--Exceptions.html
 * Comment declarer une classe d'exception ? : https://developpement-informatique.com/article/366/la-gestion-dexceptions-en-c++---declaration--utilisation-et-personnalisation
 
+# 🛐   MODULE 06 - Opérateurs de conversion
+
+* La base de tout : https://h-deb.clg.qc.ca/Sujets/Divers--cplusplus/CPP--Casts-ISO.html#static_cast
+* Mais c'est quoi la différence entre les différents opérateurs (genre static et dynamic) ? : https://prograide.com/pregunta/306/casting-regulier-vs-static_cast-vs-dynamic_cast
+
