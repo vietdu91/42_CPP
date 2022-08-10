@@ -121,6 +121,7 @@ Voici quelques liens de documentation qui pourraient vous accompagner tout au lo
 
 # 🛐   MODULE 06 - Opérateurs de conversion
 
-* La base de tout : https://h-deb.clg.qc.ca/Sujets/Divers--cplusplus/CPP--Casts-ISO.html#static_cast
+* La base de tout : https://www.open-std.org/jtc1/sc22/wg21/docs/papers/1993/N0349a.pdf
+* Un autre truc plus cool à lire : https://arne-mertz.de/2015/01/a-casting-show/
 * Mais c'est quoi la différence entre les différents opérateurs (genre static et dynamic) ? : https://prograide.com/pregunta/306/casting-regulier-vs-static_cast-vs-dynamic_cast
 
