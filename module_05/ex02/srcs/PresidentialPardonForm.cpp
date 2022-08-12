@@ -6,7 +6,7 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/01 11:53:47 by emtran            #+#    #+#             */
-/*   Updated: 2022/08/08 16:27:27 by emtran           ###   ########.fr       */
+/*   Updated: 2022/08/09 14:12:26 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,5 +57,5 @@ PresidentialPardonForm	&PresidentialPardonForm::operator=(PresidentialPardonForm
 
 void	PresidentialPardonForm::execute() const
 {
-	std::cout << this->_target << " was forgiven by Zaphod Beeblebrox" << std::endl;
+	std::cout << YELLOW_B << this->_target << RESET << " was forgiven by Zaphod Beeblebrox" << std::endl;
 }

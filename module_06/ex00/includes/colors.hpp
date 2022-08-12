@@ -6,7 +6,7 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/21 12:54:00 by emtran            #+#    #+#             */
-/*   Updated: 2022/08/12 16:14:38 by emtran           ###   ########.fr       */
+/*   Updated: 2022/08/12 16:20:28 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # define BLACK		"\033[0;30m"
 # define RED		"\033[0;31m"
 # define RED_B		"\033[1;31m"
+# define RED_C		"\033[5;31m"
 # define L_RED		"\033[0;91m"
 # define GREEN		"\033[0;32m"
 # define GREEN_B	"\033[1;32m"
@@ -31,6 +32,7 @@
 # define PINK		"\033[0;35m"
 # define L_PINK		"\033[0;95m"
 # define PINK_B		"\033[1;95m"
+# define PINK_C		"\033[5;95m"
 # define SKY		"\033[0;36m"
 # define SKY_B		"\033[1;36m"
 # define L_CYAN		"\033[0;96m"

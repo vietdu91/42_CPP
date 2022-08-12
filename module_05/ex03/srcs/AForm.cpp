@@ -6,7 +6,7 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 16:53:06 by emtran            #+#    #+#             */
-/*   Updated: 2022/08/08 14:06:19 by emtran           ###   ########.fr       */
+/*   Updated: 2022/08/09 14:31:26 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -138,5 +138,5 @@ const char	*AForm::GradeTooLowException::what() const throw() {
 
 const char	*AForm::FormNotSignedException::what() const throw() {
 
-	return ("🪧 What? A Form not signed? Go to work you lazy bastard 🏃!");
+	return ("\033[0;34m🪧  What? A Form not signed? Go to work you lazy bastard 🏃!\e[0m");
 }

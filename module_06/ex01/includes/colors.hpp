@@ -6,7 +6,7 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/21 12:54:00 by emtran            #+#    #+#             */
-/*   Updated: 2022/08/12 16:14:38 by emtran           ###   ########.fr       */
+/*   Updated: 2022/07/21 12:54:36 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@
 # define L_RED		"\033[0;91m"
 # define GREEN		"\033[0;32m"
 # define GREEN_B	"\033[1;32m"
-# define GREEN_C	"\033[5;32m"
 # define L_GREEN	"\033[0;92m"
 # define YELLOW		"\033[0;33m"
 # define L_YELLOW	"\033[0;93m"

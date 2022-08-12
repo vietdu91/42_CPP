@@ -6,7 +6,7 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/01 14:27:31 by emtran            #+#    #+#             */
-/*   Updated: 2022/08/08 16:27:19 by emtran           ###   ########.fr       */
+/*   Updated: 2022/08/09 14:12:41 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,8 +64,8 @@ char const	*RobotomyRequestForm::FailRobotomy::what(void) const throw() {
 void	RobotomyRequestForm::execute() const {
 
 	std::srand(time(NULL));
-	std::cout << "*drill noises*" << std::endl;
+	std::cout << "\033[5;97m*drill noises* LOADING...\e[0m" << std::endl;
 	if ((std::rand() % 2) == 0)
 		throw RobotomyRequestForm::FailRobotomy();
-	std::cout << this->_target << " was robotomized" << std::endl;
+	std::cout << YELLOW_B << this->_target << RESET << " was robotomized" << std::endl;
 }

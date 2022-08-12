@@ -6,7 +6,7 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/08 11:16:19 by emtran            #+#    #+#             */
-/*   Updated: 2022/08/08 13:19:08 by emtran           ###   ########.fr       */
+/*   Updated: 2022/08/09 14:29:50 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,7 +92,7 @@ AForm	*Intern::_makePresidentialPardonForm(std::string target) {
 
 char const	*Intern::NoForm::what(void) const throw() {
 
-	return ("🤬 Who trained the useless Intern?!!");
+	return ("\033[0;35m🤬 Who trained the useless Intern?!!\e[0m");
 }
 
 AForm	*Intern::makeForm(std::string name, std::string target) {
@@ -113,7 +113,7 @@ AForm	*Intern::makeForm(std::string name, std::string target) {
 	}
 	catch(std::exception & e)
 	{
-		std::cerr << "💩 We couldn't create " << name << " because ";
+		std::cerr << "💩 We couldn't create " << YELLOW_B << name << RESET << " because ";
 		std::cerr << e.what() << std::endl;
 		return (NULL);
 	}

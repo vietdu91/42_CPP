@@ -28,6 +28,11 @@
 		"type_traits": "cpp",
 		"typeinfo": "cpp",
 		"ctime": "cpp",
-		"fstream": "cpp"
+		"fstream": "cpp",
+		"array": "cpp",
+		"iomanip": "cpp",
+		"sstream": "cpp",
+		"tuple": "cpp",
+		"utility": "cpp"
 	}
 }

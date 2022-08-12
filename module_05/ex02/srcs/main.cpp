@@ -6,7 +6,7 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/01 17:34:43 by emtran            #+#    #+#             */
-/*   Updated: 2022/08/08 16:30:35 by emtran           ###   ########.fr       */
+/*   Updated: 2022/08/09 14:14:11 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,8 @@ int	main(void)
 		billy.execForm(shrub);
 		billy.promotionCanape();
 		billy.execForm(shrub);
+
+		std::cout << std::endl << "\033[1;31m==========      DESTRUCTOR       ==========\e[0m" << std::endl << std::endl;
 	}
 	std::cout << std::endl;
 	{
@@ -41,6 +43,8 @@ int	main(void)
 
 		steve.signForm(robot);
 		steve.execForm(robot);
+
+		std::cout << std::endl << "\033[1;31m==========      DESTRUCTOR       ==========\e[0m" << std::endl << std::endl;
 	}
 	std::cout << std::endl;
 	{
@@ -53,6 +57,8 @@ int	main(void)
 
 		serge.signForm(pardon);
 		serge.execForm(pardon);
+
+		std::cout << std::endl << "\033[1;31m==========      DESTRUCTOR       ==========\e[0m" << std::endl << std::endl;
 	}
 	return (0);
 }
