@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Aug 12 17:23:59 2022
+# Make data base, printed on Mon Aug 15 16:33:39 2022
 
 # Variables
 
@@ -39,11 +39,13 @@ CURDIR := /mnt/nfs/homes/emtran/Desktop/42_cpp
 # makefile
 SHELL = /bin/sh
 # environment
+GDM_LANG = en
+# environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
 _ = /usr/share/code/code
 # environment
-JOURNAL_STREAM = 9:6975123
+JOURNAL_STREAM = 9:2234269
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile
@@ -61,13 +63,13 @@ XDG_DATA_DIRS = /usr/share/gnome:/usr/share/ubuntu:/mnt/nfs/homes/emtran/.local/
 # environment
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/40120/bus
 # environment
-MANAGERPID = 1349081
+MANAGERPID = 301755
 # environment
 VSCODE_CWD = /mnt/nfs/homes/emtran
 # environment
-XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session24
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session4
 # environment
-KRB5CCNAME = FILE:/tmp/krb5cc_40120_2czYCX
+KRB5CCNAME = FILE:/tmp/krb5cc_40120_VUOMQR
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
@@ -77,7 +79,7 @@ GPG_AGENT_INFO = /run/user/40120/gnupg/S.gpg-agent:0:1
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
-SESSION_MANAGER = local/e1r5p1.clusters.42paris.fr:@/tmp/.ICE-unix/1349592,unix/e1r5p1.clusters.42paris.fr:/tmp/.ICE-unix/1349592
+SESSION_MANAGER = local/e1r3p16.clusters.42paris.fr:@/tmp/.ICE-unix/302166,unix/e1r3p16.clusters.42paris.fr:/tmp/.ICE-unix/302166
 # environment
 XDG_RUNTIME_DIR = /run/user/40120
 # environment
@@ -85,7 +87,7 @@ XDG_MENU_PREFIX = gnome-
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 219e8384017a49d5b53f0595571401f8
+INVOCATION_ID = 297154411f3b4f5cbd836284f177cca1
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -97,7 +99,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/40120/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 1350393
+GIO_LAUNCHED_DESKTOP_FILE_PID = 302739
 # automatic
 %F = $(notdir $%)
 # environment
@@ -107,7 +109,7 @@ PWD = /mnt/nfs/homes/emtran/Desktop/42_cpp
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 1349558
+SSH_AGENT_PID = 302100
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -165,6 +167,8 @@ OLDPWD = /mnt/nfs/homes/emtran
 # automatic
 *F = $(notdir $*)
 # environment
+LANGUAGE = en
+# environment
 XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
 # environment
 VSCODE_IPC_HOOK = /run/user/40120/vscode-014d0f24-1.69.2-main.sock
@@ -211,9 +215,9 @@ LANG = C
 # environment
 DOCKER_HOST = unix:///run/user/40120/docker.sock
 # environment
-VSCODE_PID = 1350393
+VSCODE_PID = 302739
 # variable set hash-table stats:
-# Load=100/1024=10%, Rehash=0, Collisions=7/122=6%
+# Load=102/1024=10%, Rehash=0, Collisions=7/124=6%
 
 # Pattern-specific Variable Values
 
@@ -221,9 +225,9 @@ VSCODE_PID = 1350393
 
 # Directories
 
-# . (device 59, inode 235837033): 18 files, no impossibilities.
+# . (device 59, inode 235837033): 19 files, no impossibilities.
 
-# 18 files, no impossibilities in 1 directories.
+# 19 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -273,12 +277,13 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 26 / storage = 293 B / avg = 11 B
-# current buf: size = 8162 B / used = 293 B / count = 26 / avg = 11 B
+# strcache buffers: 1 (0) / strings = 27 / storage = 303 B / avg = 11 B
+# current buf: size = 8162 B / used = 303 B / count = 27 / avg = 11 B
 
-# strcache performance: lookups = 29 / hit rate = 10%
+# strcache performance: lookups = 30 / hit rate = 10%
 # hash-table stats:
-# Load=26/8192=0%, Rehash=0, Collisions=2/29=7%
-# Finished Make data base on Fri Aug 12 17:23:59 2022
+# Load=27/8192=0%, Rehash=0, Collisions=2/30=7%
+ 
+# Finished Make data base on Mon Aug 15 16:33:39 2022
 
  

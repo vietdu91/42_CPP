@@ -1,14 +1,13 @@
 	# Library Name #
-NAME		=	GOD_WHERE_IS_THE_TRUTH
+NAME		=	ALBERT_ITER
 
 	# Compilator #
 COMPILER	=	c++
 
 	# Variables #
 SRCS		=		main.cpp \
-					VeritableType.cpp \
 
-INCLUDES	=		includes/VeritableType.hpp \
+INCLUDES	=		includes/whatever.hpp \
 					includes/colors.hpp \
 
 	# Colors Foreground #
