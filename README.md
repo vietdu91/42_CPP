@@ -114,12 +114,16 @@ Voici quelques liens de documentation qui pourraient vous accompagner tout au lo
 
 # 🧑‍💻   MODULE 05 - Repetitions et exceptions
 
+![Screenshot](module_05_img.png)
+
 ## Exceptions
 
 * Suivez cette page de A a Z et vous comprendrez tout sur les exceptions : https://h-deb.clg.qc.ca/Sujets/Divers--cplusplus/CPP--Exceptions.html
 * Comment declarer une classe d'exception ? : https://developpement-informatique.com/article/366/la-gestion-dexceptions-en-c++---declaration--utilisation-et-personnalisation
 
 # 🛐   MODULE 06 - Opérateurs de conversion
+
+![Screenshot](module_06_img.png)
 
 * La base de tout : https://www.open-std.org/jtc1/sc22/wg21/docs/papers/1993/N0349a.pdf
 * Un autre truc plus cool à lire : https://arne-mertz.de/2015/01/a-casting-show/
