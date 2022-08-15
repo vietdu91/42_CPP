@@ -125,3 +125,7 @@ Voici quelques liens de documentation qui pourraient vous accompagner tout au lo
 * Un autre truc plus cool à lire : https://arne-mertz.de/2015/01/a-casting-show/
 * Mais c'est quoi la différence entre les différents opérateurs (genre static et dynamic) ? : https://prograide.com/pregunta/306/casting-regulier-vs-static_cast-vs-dynamic_cast
 
+# 🖼️   MODULE 07 - Templates
+
+* Qu'est-ce qu'un fichier tpp ? : https://filebox.ece.vt.edu/~ECE2574/faq.html
+
