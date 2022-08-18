@@ -33,6 +33,7 @@
 		"iomanip": "cpp",
 		"sstream": "cpp",
 		"tuple": "cpp",
-		"utility": "cpp"
+		"utility": "cpp",
+		"*.tpp": "cpp"
 	}
 }

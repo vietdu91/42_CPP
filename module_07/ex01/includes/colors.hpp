@@ -6,7 +6,7 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/21 12:54:00 by emtran            #+#    #+#             */
-/*   Updated: 2022/08/18 14:11:25 by emtran           ###   ########.fr       */
+/*   Updated: 2022/07/21 12:54:36 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,6 @@
 # define SKY_B		"\033[1;36m"
 # define L_CYAN		"\033[0;96m"
 # define GREY		"\033[0;37m"
-# define GREY_B		"\033[1;37m"
 # define D_GREY		"\033[0;90m"
 # define WHITE		"\033[0;97m"
 # define WHITE_B	"\033[1;97m"
