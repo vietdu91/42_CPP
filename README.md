@@ -138,6 +138,7 @@ Voici quelques liens de documentation qui pourraient vous accompagner tout au lo
 # 🚧   MODULE 08 - Containers templates, itérateurs, algorithmes
 
 * Comment bien choisir son container :
+
 ![Screenshot](choix_contener.png)
 
 
