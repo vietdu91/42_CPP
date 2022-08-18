@@ -139,6 +139,6 @@ Voici quelques liens de documentation qui pourraient vous accompagner tout au lo
 
 * Comment bien choisir son container :
 
-![Screenshot](choix_contener.png)
+![Screenshot](choix_conteneur.png)
 
 
