@@ -34,6 +34,13 @@
 		"sstream": "cpp",
 		"tuple": "cpp",
 		"utility": "cpp",
-		"*.tpp": "cpp"
+		"*.tpp": "cpp",
+		"deque": "cpp",
+		"list": "cpp",
+		"unordered_map": "cpp",
+		"vector": "cpp",
+		"functional": "cpp",
+		"optional": "cpp",
+		"ranges": "cpp"
 	}
 }
