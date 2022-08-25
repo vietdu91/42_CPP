@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Aug 22 19:21:39 2022
+# Make data base, printed on Thu Aug 25 14:23:43 2022
 
 # Variables
 
@@ -45,7 +45,7 @@ VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupp
 # environment
 _ = /usr/share/code/code
 # environment
-JOURNAL_STREAM = 9:2014232
+JOURNAL_STREAM = 9:1405816
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile
@@ -63,13 +63,13 @@ XDG_DATA_DIRS = /usr/share/gnome:/usr/share/ubuntu:/mnt/nfs/homes/emtran/.local/
 # environment
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/40120/bus
 # environment
-MANAGERPID = 336459
+MANAGERPID = 293532
 # environment
 VSCODE_CWD = /mnt/nfs/homes/emtran
 # environment
-XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session9
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session4
 # environment
-KRB5CCNAME = FILE:/tmp/krb5cc_40120_k9Hw45
+KRB5CCNAME = FILE:/tmp/krb5cc_40120_4LxsLV
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
@@ -79,7 +79,7 @@ GPG_AGENT_INFO = /run/user/40120/gnupg/S.gpg-agent:0:1
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
-SESSION_MANAGER = local/e1r12p17.clusters.42paris.fr:@/tmp/.ICE-unix/336963,unix/e1r12p17.clusters.42paris.fr:/tmp/.ICE-unix/336963
+SESSION_MANAGER = local/e1r3p16.clusters.42paris.fr:@/tmp/.ICE-unix/294057,unix/e1r3p16.clusters.42paris.fr:/tmp/.ICE-unix/294057
 # environment
 XDG_RUNTIME_DIR = /run/user/40120
 # environment
@@ -87,7 +87,7 @@ XDG_MENU_PREFIX = gnome-
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = ea799ff7293241369d2fcecdc9376f0a
+INVOCATION_ID = 3dcc4668947a43cd88ebe76134910a09
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -99,7 +99,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/40120/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 337574
+GIO_LAUNCHED_DESKTOP_FILE_PID = 294468
 # automatic
 %F = $(notdir $%)
 # environment
@@ -109,7 +109,7 @@ PWD = /mnt/nfs/homes/emtran/Desktop/42_cpp
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 336926
+SSH_AGENT_PID = 294021
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -215,7 +215,7 @@ LANG = C
 # environment
 DOCKER_HOST = unix:///run/user/40120/docker.sock
 # environment
-VSCODE_PID = 337574
+VSCODE_PID = 294468
 # variable set hash-table stats:
 # Load=102/1024=10%, Rehash=0, Collisions=7/124=6%
 
@@ -225,7 +225,7 @@ VSCODE_PID = 337574
 
 # Directories
 
-# . (device 59, inode 235837033): 23 files, no impossibilities.
+# . (device 55, inode 235837033): 23 files, no impossibilities.
 
 # 23 files, no impossibilities in 1 directories.
 
@@ -283,7 +283,6 @@ GNUmakefile:
 # strcache performance: lookups = 34 / hit rate = 8%
 # hash-table stats:
 # Load=31/8192=0%, Rehash=0, Collisions=2/34=6%
- 
-# Finished Make data base on Mon Aug 22 19:21:39 2022
+# Finished Make data base on Thu Aug 25 14:23:43 2022
 
  

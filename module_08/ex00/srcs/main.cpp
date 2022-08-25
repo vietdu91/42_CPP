@@ -6,7 +6,7 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/22 15:02:33 by emtran            #+#    #+#             */
-/*   Updated: 2022/08/22 15:59:33 by emtran           ###   ########.fr       */
+/*   Updated: 2022/08/25 10:15:31 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,24 @@ std::ostream	&operator<<(std::ostream &o, int const *array) {
 }
 
 template< typename T >
+void	searchInList(T &List, int const &nb)
+{
+	typename T::iterator search;
+
+	try
+	{
+	 	search = easyfind(List, nb);
+		std::cout << GREEN_B << "🤗 FOUND! It " << nb;
+		std::cout << " was found at index " << std::distance(List.begin(), search) << " !!! The family is reunited 💜 !!!";
+		std::cout << RESET << std::endl << std::endl;
+	}
+	catch (std::exception &e)
+	{
+		std::cerr << e.what() << RESET << std::endl << std::endl;
+	}
+}
+
+template< typename T >
 void	searchInVector(T &Vector, int const &nb)
 {
 	typename T::iterator search;
@@ -46,7 +64,7 @@ void	searchInVector(T &Vector, int const &nb)
 	try
 	{
 	 	search = easyfind(Vector, nb);
-		std::cout << GREEN_B << "🤗 FOUND! It" << nb;
+		std::cout << GREEN_B << "🤗 FOUND! It " << nb;
 		std::cout << " was found at index " << search - Vector.begin() << " !!! The family is reunited 💜 !!!";
 		std::cout << RESET << std::endl << std::endl;
 	}
@@ -75,7 +93,7 @@ int	main() {
 		if (i < 6)
 			std::cout << ", ";
 	}
-	std::cout << "] " << RESET;
+	std::cout << " ] " << RESET;
 
 	std::cout << std::endl << std::endl;
 	std::cout << YELLOW_B << "____ AVIS DE RECHERCHE DU PAPA " << RESET << PINK_B << "69 🔎" << RESET << YELLOW_B << " ____" << RESET << std::endl << std::endl << SKY;
@@ -102,34 +120,34 @@ int	main() {
 
     std::list<int> List;
 
-	// std::cout << SKY_B << "[ ";
-	// for (int i = 0; i < 7; i++)
-	// {
-	// 	List.push_back(array[i]);
-	// 	std::cout << List[i];
-	// 	if (i < 6)
-	// 		std::cout << ", ";
-	// }
-	// std::cout << "] " << RESET;
+	std::cout << SKY_B << "[ ";
+	for (int i = 0; i < 7; i++)
+	{
+		List.push_back(array[i]);
+		std::cout << array[i];
+		if (i < 6)
+			std::cout << ", ";
+	}
+	std::cout << " ] " << RESET;
 
-	// std::cout << std::endl << std::endl;
-	// std::cout << YELLOW_B << "____ AVIS DE RECHERCHE DU PAPA " << RESET << PINK_B << "69 🔎" << RESET << YELLOW_B << " ____" << RESET << std::endl << std::endl << SKY;
+	std::cout << std::endl << std::endl;
+	std::cout << YELLOW_B << "____ AVIS DE RECHERCHE DU PAPA " << RESET << PINK_B << "69 🔎" << RESET << YELLOW_B << " ____" << RESET << std::endl << std::endl << SKY;
 
-	// searchInList(List, 69);
+	searchInList(List, 69);
 
-	// std::cout << YELLOW_B << "____ AVIS DE RECHERCHE DE MAMAN " << RESET << PINK_B << "9999 🔎" << RESET << YELLOW_B << " ____" << RESET << std::endl << std::endl << SKY;
+	std::cout << YELLOW_B << "____ AVIS DE RECHERCHE DE MAMAN " << RESET << PINK_B << "9999 🔎" << RESET << YELLOW_B << " ____" << RESET << std::endl << std::endl << SKY;
 
-	// searchInList(List, 9999);
+	searchInList(List, 9999);
 
-	// std::cout << YELLOW_B << "____ AVIS DE RECHERCHE DU FISTON " << RESET << PINK_B << "-66666 🔎" << RESET << YELLOW_B << " ____" << RESET << std::endl << std::endl << SKY;
+	std::cout << YELLOW_B << "____ AVIS DE RECHERCHE DU FISTON " << RESET << PINK_B << "-66666 🔎" << RESET << YELLOW_B << " ____" << RESET << std::endl << std::endl << SKY;
 
-	// searchInList(List, -66666);
+	searchInList(List, -66666);
 
-	// std::cout << YELLOW_B << "____ AVIS DE RECHERCHE DE MAMIE " << RESET << PINK_B << "0 🔎" << RESET << YELLOW_B << " ____" << RESET << std::endl << std::endl << SKY;
+	std::cout << YELLOW_B << "____ AVIS DE RECHERCHE DE MAMIE " << RESET << PINK_B << "0 🔎" << RESET << YELLOW_B << " ____" << RESET << std::endl << std::endl << SKY;
 
-	// searchInList(List, 0);
+	searchInList(List, 0);
 
-	// std::cout << YELLOW_B << "____ AVIS DE RECHERCHE DU TONTON INCONNU " << RESET << PINK_B << "28 🔎" << RESET << YELLOW_B << " ____" << RESET << std::endl << std::endl << SKY;
+	std::cout << YELLOW_B << "____ AVIS DE RECHERCHE DU TONTON INCONNU " << RESET << PINK_B << "28 🔎" << RESET << YELLOW_B << " ____" << RESET << std::endl << std::endl << SKY;
 
-	// searchInList(List, 28);
+	searchInList(List, 28);
 }
