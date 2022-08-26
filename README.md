@@ -131,11 +131,15 @@ Voici quelques liens de documentation qui pourraient vous accompagner tout au lo
 
 # 🖼️   MODULE 07 - Templates
 
+![Screenshot](module_07_img.png)
+
 * Une introduction des Templates : http://codeofthedamned.com/index.php/fundamentals-of-c-templates
 * Ce site est vraiment une pepite : https://h-deb.clg.qc.ca/Sujets/Divers--cplusplus/templates.html
 * Qu'est-ce qu'un fichier tpp ? : https://filebox.ece.vt.edu/~ECE2574/faq.html
 
 # 🚧   MODULE 08 - Containers templates, itérateurs, algorithmes
+
+![Screenshot](module_08_img.png)
 
 * Comment bien choisir son container :
 
