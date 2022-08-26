@@ -141,6 +141,9 @@ Voici quelques liens de documentation qui pourraient vous accompagner tout au lo
 
 ![Screenshot](module_08_img.png)
 
+* Introduction sur les tableaux et les vector : https://www.informit.com/articles/article.aspx?p=2216986
+* La difference entre iterator et const_iterator : https://stackoverflow.com/questions/5346890/what-is-the-difference-between-const-iterator-and-iterator
+* Comment iterer un vector tout en supprimant des elements : https://www.bojankomazec.com/2011/07/remove-selected-vector-elements-whilst.html
 * Comment bien choisir son container :
 
 ![Screenshot](choix_conteneur.png)
