@@ -6,7 +6,7 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/25 14:38:11 by emtran            #+#    #+#             */
-/*   Updated: 2022/08/25 15:13:51 by emtran           ###   ########.fr       */
+/*   Updated: 2022/08/26 11:44:52 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,8 +46,8 @@ MutantStack<T>::~MutantStack() {
 template<typename T>
 MutantStack<T> const	&MutantStack<T>::operator=(MutantStack<T> const &rhs) {
 
-	if (*this != &rhs)
-		this->c = rhs.c
+	if (this != &rhs)
+		this->c = rhs.c;
 	return (*this);
 }
 
@@ -72,25 +72,25 @@ MutantStack<T> const	&MutantStack<T>::operator=(MutantStack<T> const &rhs) {
 //	 =======     OTHERS FUNCTIONS    =======
 
 template<typename T>
-MutantStack<T>::iterator		MutantStack<T>::begin() {
+typename MutantStack<T>::iterator		MutantStack<T>::begin() {
 
 	return (this->c.begin());
 };
 
 template<typename T>
-MutantStack<T>::iterator		MutantStack<T>::end() {
+typename MutantStack<T>::iterator		MutantStack<T>::end() {
 
 	return (this->c.end());
 };
 
 template<typename T>
-MutantStack<T>::const_iterator	MutantStack<T>::begin() const {
+typename MutantStack<T>::const_iterator	MutantStack<T>::begin() const {
 
 	return (this->c.begin());
 };
 
 template<typename T>
-MutantStack<T>::const_iterator	MutantStack<T>::end() const {
+typename MutantStack<T>::const_iterator	MutantStack<T>::end() const {
 
 	return (this->c.end());
 };

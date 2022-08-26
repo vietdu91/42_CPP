@@ -6,7 +6,7 @@
 /*   By: emtran <emtran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/25 14:24:32 by emtran            #+#    #+#             */
-/*   Updated: 2022/08/25 14:38:04 by emtran           ###   ########.fr       */
+/*   Updated: 2022/08/26 11:43:29 by emtran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,5 +42,7 @@ class MutantStack : public std::stack<T> {
 		const_iterator	begin() const;
 		const_iterator	end()	const;
 };
+
+# include "MutantStack.tpp"
 
 #endif
